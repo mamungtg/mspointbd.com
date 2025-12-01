@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portfolio | Md Mominul Hoque</title>
+    <meta charset="UTF-8">
+    <title>MS Point – Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- Header -->
 <header class="sticky-header">
     <div class="container nav">
         <h1 class="logo">MS Point</h1>
@@ -13,7 +14,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -21,199 +22,105 @@
     </div>
 </header>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background: #f6f6f6;
-        color: #222;
-        line-height: 1.6;
-    }
-    header {
-        background: #0a3d62;
-        color: white;
-        padding: 40px 20px;
-        text-align: center;
-    }
-    header h1 {
-        margin: 0;
-        font-size: 32px;
-        letter-spacing: 1px;
-    }
-    header p { margin: 6px 0; }
+<section class="content">
+    <div class="container">
 
-    .container {
-        max-width: 1000px;
-        margin: auto;
-        background: white;
-        padding: 25px;
-    }
-    h2 {
-        border-left: 5px solid #0a3d62;
-        padding-left: 10px;
-        margin-top: 40px;
-    }
-    .section { margin-bottom: 20px; }
-    ul { padding-left: 20px; }
+        <h2>Professional Portfolio</h2>
 
-    .two-col {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
+        <h3>Profile</h3>
+        <p><strong>Md Mominul Hoque</strong><br>
+        House 339 (6th floor), Road #01, Moynarbag, Uttor Badda, Dhaka, Bangladesh<br>
+        Phone: +8801722458581<br>
+        Mail: hoque.mdmominul@gmail.com</p>
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-    }
-    table, th, td {
-        border: 1px solid #ccc;
-        padding: 8px;
-        font-size: 14px;
-    }
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: #0a3d62;
-        color: white;
-        margin-top: 40px;
-    }
+        <p><strong>Summary:</strong> Proactive IT professional with 14+ years of experience in System Administration, 
+        Infrastructure Management, DevOps, and enterprise operations within Banking and Financial Services. 
+        Skilled in PowerShell, Python, SQL, Kubernetes, Docker, Jenkins, enterprise monitoring, incident response, 
+        root cause analysis, automation, and ISO 27001 compliance. Experienced in core banking migration, 
+        payment gateway integration, DR planning, and cloud infrastructure.</p>
 
-    @media(max-width: 768px) {
-        .two-col {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
-</head>
-<body>
 
-<header>
-    <h1>Md Mominul Hoque</h1>
-    <p>House 339 (6th Floor), Road 01, Moynarbag, Uttor Badda, Dhaka</p>
-    <p>Phone: +8801722458581 | Mail: hoque.mdmominul@gmail.com</p>
-</header>
+        <h3>Experience</h3>
 
-<div class="container">
+        <div class="portfolio-item">
+            <h4>System & Network Administrator (2023 – Present)</h4>
+            <p><strong>CVC Finance PLC – Dhaka, Bangladesh</strong></p>
+            <ul>
+                <li>Administer Windows/Linux servers, VMware, Hyper-V, AD, DNS, DHCP, mail/file servers.</li>
+                <li>Build CI/CD pipelines (Jenkins, GitHub Actions, Ansible).</li>
+                <li>Deploy container apps using Docker & Kubernetes.</li>
+                <li>Implement Prometheus, Grafana, Nagios, Zabbix, logging stacks.</li>
+                <li>Manage AWS & Azure cloud, automation & cost optimization.</li>
+                <li>Lead DR, backups, ISO 27001 compliance, firewall/endpoint security.</li>
+                <li>Support CBS, GL, RTGS, FICL, and regulatory integrations.</li>
+            </ul>
+        </div>
 
-    <h2>Summary</h2>
-    <p>
-        Proactive IT professional with 14+ years of experience in System Administration,
-        Infrastructure Management, DevOps, and IT Operations. Expert in automation,
-        virtualization, networking, cloud infrastructure, CI/CD pipelines, and ISO 27001
-        compliance. Experienced in core banking migration, payment gateway integrations,
-        eKYC deployment, and enterprise monitoring solutions.
-    </p>
+        <div class="portfolio-item">
+            <h4>System & Network Administrator (2015 – 2023)</h4>
+            <p><strong>IL Capital Limited – Dhaka, Bangladesh</strong></p>
+            <ul>
+                <li>Managed VMware, Zimbra, AD, Linux servers, storage systems.</li>
+                <li>Handled FortiGate firewall, MikroTik, VPN, VLANs, secure routing.</li>
+                <li>Performed Oracle/MySQL/MSSQL DBA tasks.</li>
+                <li>Implemented CI/CD pipelines & deployment automation.</li>
+                <li>Setup Nagios, Prometheus, and Grafana monitoring suite.</li>
+                <li>Led DR, ITIL process, and infrastructure modernization.</li>
+            </ul>
+        </div>
 
-    <h2>Core Skills</h2>
-    <div class="two-col">
-        <ul>
-            <li>PowerShell, Python, Bash</li>
-            <li>Windows Server, RHEL, CentOS, Ubuntu</li>
-            <li>VMware vSphere, Hyper-V</li>
-            <li>Git, GitHub, Jenkins, Ansible</li>
-            <li>Docker, Kubernetes</li>
-            <li>IIS, Nginx, Tomcat, Zimbra, Exchange</li>
-        </ul>
-        <ul>
-            <li>Grafana, Prometheus, Nagios, Zabbix</li>
-            <li>Fortinet, MikroTik, pfSense, VPN</li>
-            <li>RAID, NFS, iSCSI, EMC Storage</li>
-            <li>Oracle, MySQL, MS SQL</li>
-            <li>AWS, Azure Cloud</li>
-            <li>ISO 27001, ITIL, DR & BCP</li>
-        </ul>
-    </div>
+        <div class="portfolio-item">
+            <h4>Sr. Network Engineer (2011 – 2015)</h4>
+            <p><strong>X-Net Limited – Dhaka, Bangladesh</strong></p>
+            <ul>
+                <li>Designed and managed ISP-grade networks nationwide.</li>
+                <li>Implemented BGP, OSPF, VPN, GRE, NAT, load balancing, failover.</li>
+                <li>Managed enterprise mail servers with AMANDA backup.</li>
+                <li>Oversaw BTS, DC operations, and wireless deployments.</li>
+                <li>Used Wireshark, PRTG, SolarWinds, Nagios, Cacti for monitoring.</li>
+            </ul>
+        </div>
 
-    <h2>Professional Experience</h2>
+        <div class="portfolio-item">
+            <h4>System Engineer (2010 – 2011)</h4>
+            <p><strong>Data-Edge Limited – Dhaka, Bangladesh</strong></p>
+            <ul>
+                <li>Managed AD, Exchange, network backups.</li>
+                <li>Supported end-users and critical infrastructure.</li>
+                <li>Configured routers/switches, ensuring secure connectivity.</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h3>CVC Finance PLC (System & Network Administrator) | 2023 – Present</h3>
-        <ul>
-            <li>Manage Windows/Linux servers, AD, DNS, DHCP, VMware & Hyper-V.</li>
-            <li>Implement CI/CD using Jenkins, GitHub Actions, Ansible.</li>
-            <li>Deploy Docker/Kubernetes for containerized workloads.</li>
-            <li>Configure Prometheus, Grafana, Nagios for monitoring.</li>
-            <li>Lead ISO 27001 implementation, DR, backup & security operations.</li>
-            <li>Manage AWS/Azure infrastructure with automation & cost optimization.</li>
-        </ul>
-    </div>
 
-    <div class="section">
-        <h3>IL Capital Limited (System & Network Administrator) | 2015 – 2023</h3>
-        <ul>
-            <li>Managed Windows/Linux servers, Zimbra, VMware, enterprise storage.</li>
-            <li>Administered MikroTik & Fortinet network infrastructure.</li>
-            <li>Performed DBA tasks on Oracle/MySQL/MSSQL.</li>
-            <li>Implemented CI/CD & Kubernetes environments.</li>
-            <li>Monitored systems via Nagios, Prometheus, Grafana.</li>
-        </ul>
-    </div>
+        <h3>Key Skills</h3>
+        <div class="portfolio-item">
+            <ul>
+                <li>PowerShell, Python, Bash</li>
+                <li>Windows Server, Linux (RHEL, CentOS, Ubuntu)</li>
+                <li>VMware Cluster, vCenter, Hyper-V</li>
+                <li>Jenkins, Docker, Kubernetes, Ansible</li>
+                <li>IIS, NGINX, Tomcat, WebLogic</li>
+                <li>Firewall: Fortinet, pfSense, MikroTik</li>
+                <li>Monitoring: Grafana, Prometheus, Zabbix, Nagios</li>
+                <li>AWS, Azure, Cloudflare, VPN, Load Balancing</li>
+                <li>SQL/PLSQL, Oracle 19c, MySQL, MS SQL</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h3>X-Net Ltd (Sr. Network Engineer – NOC) | 2011 – 2015</h3>
-        <ul>
-            <li>Designed & maintained nationwide ISP networks.</li>
-            <li>Configured BGP, OSPF, GRE, VPN, load-balancing, failover.</li>
-            <li>Managed enterprise mail servers and AMANDA backups.</li>
-            <li>Monitored traffic via Wireshark, PRTG, SolarWinds.</li>
-        </ul>
-    </div>
 
-    <div class="section">
-        <h3>Data-Edge Ltd (System Engineer) | 2010 – 2011</h3>
-        <ul>
-            <li>Managed Active Directory & Exchange server operations.</li>
-            <li>Maintained network backups & user support.</li>
-            <li>Configured switches/routers and ensured secure connectivity.</li>
-        </ul>
-    </div>
+        <h3>Certifications</h3>
+        <div class="portfolio-item">
+            <ul>
+                <li>Certified Kubernetes Administrator (CKA)</li>
+                <li>ITIL 4 Foundation</li>
+                <li>RHCE, RHCSA, RHCVA</li>
+                <li>CCNA</li>
+                <li>MCSA (Windows + Exchange)</li>
+            </ul>
+        </div>
 
-    <h2>Selected Projects</h2>
-    <ul>
-        <li>Kubernetes Cluster & CI/CD Automation using Docker, GitHub, Jenkins.</li>
-        <li>Monitoring Stack with Grafana, Prometheus, Loki, SNMP, Wazuh.</li>
-        <li>ISO 27001 policy development, risk management & audit readiness.</li>
-        <li>Core Banking System Migration with zero-downtime strategy.</li>
-        <li>Payment Gateway (PCI DSS-aligned) deployment & support.</li>
-        <li>eKYC integration with core banking and backend services.</li>
-        <li>AI Chatbot deployment for customer service automation.</li>
-        <li>Mobile App backend integration and service optimization.</li>
-    </ul>
 
-    <h2>Education</h2>
-    <table>
-        <tr><th>Degree</th><th>Institution</th><th>Year</th><th>Result</th></tr>
-        <tr><td>M.Sc. CSE</td><td>Royal University of Dhaka</td><td>2025</td><td>3.7</td></tr>
-        <tr><td>PGD Networking</td><td>IDB-BISEW</td><td>2010</td><td>Passed</td></tr>
-        <tr><td>M.A. Bangla</td><td>National University</td><td>2006</td><td>2nd Div</td></tr>
-        <tr><td>B.A. Hon’s</td><td>National University</td><td>2005</td><td>2nd Div</td></tr>
-        <tr><td>Alim (HSC)</td><td>Madrasah Board</td><td>2001</td><td>2nd Div</td></tr>
-        <tr><td>Dakhil (SSC)</td><td>Madrasah Board</td><td>1999</td><td>2nd Div</td></tr>
-    </table>
-
-    <h2>Certifications</h2>
-    <ul>
-        <li>Certified Kubernetes Administrator (CKA)</li>
-        <li>RHCE, RHCSA, RHCVA</li>
-        <li>ITIL 4 Foundation</li>
-        <li>CCNA</li>
-        <li>MCSA (Windows & Exchange)</li>
-    </ul>
-
-    <h2>Web Profiles</h2>
-    <p>
-        <a href="https://www.linkedin.com/in/mdmhoque" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/mamungtg" target="_blank">GitHub</a> |
-        <a href="https://facebook.com/mamungtg" target="_blank">Facebook</a>
-    </p>
-
-</div>
-
-<footer>
-    © 2025 Md Mominul Hoque – Professional IT Portfolio
-</footer>
-
-</body>
-</html>
+        <h3>Selected Projects</h3>
+        <div class="portfolio-item">
+            <ul>
+                <li>Kubernetes
