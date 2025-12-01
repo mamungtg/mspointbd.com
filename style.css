@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: white;
+    padding: 15px 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav a.active, .nav a:hover {
+    color: #00a8ff;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    background: #222;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #00a8ff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Content */
+.content {
+    padding: 50px 0;
+}
+.service-box {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Contact Form */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+button {
+    background: #00a8ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0088cc;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
