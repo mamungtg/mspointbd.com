@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MS Point – Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+        <h1 class="logo">MS Point</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="content">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Fill out the form and we’ll get in touch shortly.</p>
+
+        <form action="https://formsubmit.co/YOUR_MAIL" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Mail</label>
+            <input type="mail" name="mail" required>
+
+            <label>Message</label>
+            <textarea name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2025 MS Point. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
