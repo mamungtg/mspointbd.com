@@ -6,6 +6,8 @@
     --bg-dark: #0a0a0a;
     --text-dark: #eaeaea;
     --card-dark: #1a1a1a;
+
+    --primary: #0059b3;
 }
 
 body {
@@ -22,33 +24,143 @@ body.dark {
 }
 
 header {
-    padding: 20px;
-    background: #0059b3;
+    padding: 15px 20px;
+    background: var(--primary);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
+header h2 {
+    margin: 0;
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button {
+    background: white;
+    color: var(--primary);
+    padding: 5px 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Container */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
 
+/* Card */
 .card {
     background: var(--card-light);
     padding: 20px;
-    border-radius: 6px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
 body.dark .card {
     background: var(--card-dark);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 0 0 12px 12px;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-img {
+        height: 260px;
+    }
+    .hero-text {
+        bottom: 20px;
+        left: 20px;
+    }
+    .hero-text h1 {
+        font-size: 24px;
+    }
+    .hero-text p {
+        font-size: 14px;
+    }
 }
