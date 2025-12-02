@@ -167,3 +167,26 @@ body.dark .card {
         font-size: 14px;
     }
 }
+/* FIX HEADER OVERFLOW */
+header {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* FIX NAV PUSHING TO THE RIGHT */
+nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* FIX GLOBAL PAGE WIDTH ISSUE */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header img {
+    max-height: 40px;
+}
+
