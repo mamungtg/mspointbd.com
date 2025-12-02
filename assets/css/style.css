@@ -279,3 +279,39 @@ body.dark .card {
         padding: 10px;
     }
 }
+/* FORCE HEADER TO ALWAYS BE FULL WIDTH */
+header {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+/* FIX LAYOUT CONTRIBUTING TO WHITE SPACE BUG */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+section, div, header, footer {
+    box-sizing: border-box !important;
+}
+#logo {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
