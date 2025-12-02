@@ -52,6 +52,13 @@ header {
     object-fit: contain;
     display: block;
 }
+header {
+    height: 70px; /* adjust to match header height */
+}
+
+.hero {
+    margin-top: 70px; /* move hero down so header does NOT cover it */
+}
 
 /* NAV */
 nav {
@@ -83,9 +90,14 @@ button {
 /* HERO SECTION */
 .hero {
     width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+    min-height: 450px;
+    height: auto;
+}
+.hero-img {
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    object-fit: cover;
 }
 
 .hero-img {
@@ -111,6 +123,10 @@ button {
 .hero-text p {
     font-size: 20px;
 }
+.after-hero {
+    height: 60px; /* adjust to make it lower or higher */
+}
+<div class="after-hero"></div>
 
 /* MAIN CONTAINER */
 .container {
@@ -183,4 +199,11 @@ body.dark footer {
     button {
         width: 100%;
     }
+}
+body {
+    background: var(--bg-light) !important;
+}
+
+body.dark {
+    background: var(--bg-dark) !important;
 }
