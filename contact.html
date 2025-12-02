@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MS Point – Contact</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Contact | MS POINT</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/theme.js" defer></script>
 </head>
 <body>
 
-<header class="sticky-header">
-    <div class="container nav">
-        <h1 class="logo">MS Point</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+<header>
+    <h2>MS POINT</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="industries.html">Industries</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <button onclick="toggleTheme()">Dark/Light</button>
 </header>
 
+<div class="container">
+<h1>Contact Us</h1>
 
-<section class="content">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Fill out the form and we’ll get in touch shortly.</p>
+<div class="card">
+<form>
+<label>Your Name</label><br>
+<input type="text" style="width:100%; padding:8px;"><br><br>
 
-        <form action="https://formsubmit.co/YOUR_MAIL" method="POST">
+<label>Your Mail</label><br>
+<input type="text" style="width:100%; padding:8px;"><br><br>
 
-            <input type="hidden" name="_captcha" value="false">
+<label>Your Message</label><br>
+<textarea style="width:100%; height:120px; padding:8px;"></textarea><br><br>
 
-            <label>Name</label>
-            <input type="text" name="name" required>
+<button>Send Message</button>
+</form>
+</div>
 
-            <label>Mail</label>
-            <input type="mail" name="mail" required>
+<div class="card">
+<h2>Office Address</h2>
+<p>Dhaka, Bangladesh</p>
+<p>Phone: +8801722458581</p>
+<p>Mail: info@mspoint.com</p>
+</div>
 
-            <label>Message</label>
-            <textarea name="message" rows="5" required></textarea>
+</div>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>© 2025 MS Point. All Rights Reserved.</p>
-    </div>
-</footer>
+<footer>© 2025 MS POINT. All Rights Reserved.</footer>
 
 </body>
 </html>
