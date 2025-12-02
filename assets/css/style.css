@@ -189,4 +189,34 @@ html, body {
 header img {
     max-height: 40px;
 }
+/* FORCE HEADER TO BE FULL WIDTH */
+header {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+/* FIX NAV SPACING AND PREVENT OVERFLOW BREAK */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* align center */
+    width: 100%;
+}
+
+/* GLOBAL RESET – FIX WHITE BLANK RIGHT SIDE */
+html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* FIX HERO TO MATCH FULL PAGE WIDTH */
+.hero, .hero-img {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+}
 
