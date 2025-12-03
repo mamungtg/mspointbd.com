@@ -86,47 +86,46 @@ button {
     font-weight: bold;
     border-radius: 4px;
 }
-
-/* HERO SECTION */
 .hero {
-    width: 100%;
-    min-height: 450px;
-    height: auto;
-}
-.hero-img {
-    width: 100%;
-    height: auto;
-    min-height: 450px;
-    object-fit: cover;
+    position: relative;
+    height: 420px;
+    display: flex;
+    align-items: center;       /* Vertical center */
+    padding-left: 60px;        /* Keep text on left */
+    color: white;
+    overflow: hidden;
 }
 
+/* Background Image */
 .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.55);
+    filter: brightness(0.45);   /* Dark overlay for readable text */
 }
 
+/* Text Box */
 .hero-text {
-    position: absolute;
-    left: 50px;
-    bottom: 60px;
-    color: #fff;
-    max-width: 650px;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    text-align: left;          /* Ensure left-side alignment */
 }
 
 .hero-text h1 {
     font-size: 42px;
     font-weight: bold;
+    margin: 0;
 }
 
 .hero-text p {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 12px;
+    line-height: 1.4;
 }
-.after-hero {
-    height: 60px; /* adjust to make it lower or higher */
-}
-<div class="after-hero"></div>
 
 /* MAIN CONTAINER */
 .container {
