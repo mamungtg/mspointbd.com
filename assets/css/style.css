@@ -274,3 +274,32 @@ nav a:hover {
 .brand-text {
     letter-spacing: 1px;
 }
+.site-header {
+    background: #0a3d62;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#brand-logo svg {
+    height: 30px;
+}
+
+.main-menu a {
+    color: #ffffff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
