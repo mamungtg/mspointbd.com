@@ -154,8 +154,7 @@ footer {
 }
 
 /* MS / POINT text lines */
-.logo-text .line1,
-.logo-text .line2 {
+.logo-text .line1,{
     font-size: 22px;
     letter-spacing: 1px;
 }
