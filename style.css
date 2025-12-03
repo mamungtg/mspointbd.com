@@ -128,22 +128,33 @@ footer {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 /* One-line logo alignment */
+/* Align everything in one row */
 .logo-text {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;           /* Space between icon and MS */
     text-decoration: none;
-    padding: 10px 20px;
 }
 
+/* Icon size */
 .logo-icon {
     width: 24px;
     height: 24px;
 }
 
-.logo-title {
-    font-size: 26px;
+/* MS text */
+.logo-ms {
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 1px;
     color: white;
+}
+
+/* POINT text */
+.logo-point {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 6px;    /* Small spacing between MS and POINT */
 }
