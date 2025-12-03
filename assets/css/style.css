@@ -265,3 +265,32 @@ body.dark footer {
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 1024px) {
+    #latest-articles .article-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #latest-articles .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #latest-articles h3 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 900px) {
+    #industries .industry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #industries .icon-title img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #industries .industry-card {
+        padding: 20px;
+    }
+}
