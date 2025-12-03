@@ -261,12 +261,16 @@ nav a:hover {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     color: #ffffff;
     cursor: pointer;
 }
 
-#brand-logo img {
-    height: 28px;
+#brand-logo svg {
+    height: 32px;
+}
+
+.brand-text {
+    letter-spacing: 1px;
 }
