@@ -228,3 +228,19 @@ body.dark footer {
         margin-bottom: 5px;
     }
 }
+@media (max-width: 1024px) {
+    #managed-services .focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #managed-services .focus-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #managed-services .icon-title img {
+        width: 45px;
+        height: 45px;
+    }
+}
