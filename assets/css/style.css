@@ -257,3 +257,16 @@ nav a:hover {
 .theme-btn:hover {
     background: #e6e6e6;
 }
+#brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#brand-logo img {
+    height: 28px;
+}
