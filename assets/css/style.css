@@ -110,9 +110,11 @@ button {
 .hero-text {
     position: absolute;
     left: 50px;
-    bottom: 60px;
+    top: 50%;
+    transform: translateY(-50%);
     color: #fff;
     max-width: 650px;
+    text-align: left;
 }
 
 .hero-text h1 {
