@@ -1,0 +1,15 @@
+<svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <!-- Shield background -->
+    <path d="M12 2L4 6V11C4 16.52 7.8 21.74 12 23C16.2 21.74 20 16.52 20 11V6L12 2Z"
+          fill="#ffffff"/>
+
+    <!-- Letter M (blue) -->
+    <text x="12" y="15" text-anchor="middle" font-size="11" font-weight="900" fill="#0059B3">
+        M
+    </text>
+
+    <!-- Letter S (inside M, red) -->
+    <text x="12" y="15" text-anchor="middle" font-size="7" font-weight="700" fill="#ff0000">
+        S
+    </text>
+</svg>
