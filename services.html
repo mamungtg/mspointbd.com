@@ -29,30 +29,118 @@
 
 <h1>Our IT Services</h1>
 
-<div class="card">
-<h2>Cybersecurity</h2>
-<p>Firewall, IDS/IPS, SIEM, vulnerability assessment, penetration testing, ISO 27001 readiness.</p>
-</div>
+<section id="core-focus-areas" style="background:#f6f6f6;padding:40px 20px;">
+    <div style="max-width:1200px;margin:auto;">
+        <h2 style="border-left:5px solid #0a3d62;padding-left:10px;color:#0a3d62;margin-bottom:25px;">
+            Core Focus Areas
+        </h2>
 
-<div class="card">
-<h2>Cloud Engineering</h2>
-<p>AWS, Azure, containerization, Kubernetes, cloud migration and optimization.</p>
-</div>
+        <style>
+            .focus-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+            @media(max-width: 1024px){
+                .focus-grid { grid-template-columns: repeat(2, 1fr); }
+            }
+            @media(max-width: 600px){
+                .focus-grid { grid-template-columns: repeat(1, 1fr); }
+            }
+            .focus-block {
+                background: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.08);
+                text-align: left;
+            }
+            .focus-block img {
+                width: 42px;
+                margin-bottom: 10px;
+            }
+            .focus-block h3 {
+                margin-top: 0;
+                color: #0a3d62;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            .focus-block ul {
+                margin: 0;
+                padding-left: 20px;
+                line-height: 1.6;
+            }
+        </style>
 
-<div class="card">
-<h2>DevOps Automation</h2>
-<p>CI/CD pipelines, Docker, Kubernetes orchestration, Infrastructure as Code.</p>
-</div>
+        <div class="focus-grid">
 
-<div class="card">
-<h2>System Administration</h2>
-<p>Linux/Windows servers, monitoring, Active Directory, domain services.</p>
-</div>
+            <!-- Cybersecurity -->
+            <div class="focus-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
+                <h3>Cybersecurity & Compliance</h3>
+                <ul>
+                    <li>Defense-in-Depth aligned with ISO 27001:2022.</li>
+                    <li>Firewall hardening, IPS/IDS, VPN designs.</li>
+                    <li>SPF, DKIM, DMARC, MTA-STS, DANE.</li>
+                    <li>Vulnerability assessment & patch cycles.</li>
+                    <li>Access control, SIEM, incident response.</li>
+                </ul>
+            </div>
 
-<div class="card">
-<h2>Network Engineering</h2>
-<p>LAN/WAN, VPN, pfSense, MikroTik, VoIP, multi-branch connectivity solutions.</p>
-</div>
+            <!-- Cloud -->
+            <div class="focus-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/4144/4144781.png">
+                <h3>Cloud Engineering (AWS & Azure)</h3>
+                <ul>
+                    <li>Deploying scalable workloads (EC2, RDS, Azure VM).</li>
+                    <li>Full on-prem to cloud migrations.</li>
+                    <li>Load balancing, auto-scaling & backup lifecycle.</li>
+                    <li>Hybrid cloud with site-to-site VPN.</li>
+                    <li>Cloud monitoring & cost optimization.</li>
+                </ul>
+            </div>
+
+            <!-- System & Network -->
+            <div class="focus-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/483/483947.png">
+                <h3>System & Network Administration</h3>
+                <ul>
+                    <li>Windows/Linux enterprise environments.</li>
+                    <li>AD, Group Policy, DNS/DHCP, WSUS.</li>
+                    <li>L2/L3 networking (VLANs, STP, routing).</li>
+                    <li>VOIP & branch office networking.</li>
+                    <li>Performance tuning & optimization.</li>
+                </ul>
+            </div>
+
+            <!-- DevOps -->
+            <div class="focus-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/5969/5969050.png">
+                <h3>DevOps, Automation & CI/CD</h3>
+                <ul>
+                    <li>Docker, Docker Compose, Nginx Proxy Manager.</li>
+                    <li>CI/CD via GitHub Actions & Jenkins.</li>
+                    <li>Ansible & Terraform automation (IaC).</li>
+                    <li>ELK, Prometheus, Grafana monitoring.</li>
+                    <li>Secure GitOps pipelines.</li>
+                </ul>
+            </div>
+
+            <!-- DR & BC -->
+            <div class="focus-block">
+                <img src="https://cdn-icons-png.flaticon.com/512/3103/3103446.png">
+                <h3>Disaster Recovery & Business Continuity</h3>
+                <ul>
+                    <li>RPO/RTO planning & DR lifecycle.</li>
+                    <li>VM, DB & app-level cloud replication.</li>
+                    <li>Continuity for finance & call-centers.</li>
+                    <li>HA firewall clusters & load balancing.</li>
+                    <li>Audit-ready documentation & playbooks.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 </div>
 
