@@ -4,10 +4,90 @@
 <meta charset="UTF-8">
 <title>MS POINT | IT Consulting & Business Solutions</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/style.css">
 
+<link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/theme.js" defer></script>
 <script src="assets/js/script.js" defer></script>
+
+<style>
+    body {
+        background: #f4f6f9;
+        color: #222;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #0a3d62;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    label {
+        font-weight: bold;
+        color: #0a3d62;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    textarea { resize: vertical; }
+
+    button {
+        background: #0a3d62;
+        color: #fff;
+        padding: 12px;
+        width: 100%;
+        border: none;
+        font-size: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #07426e;
+    }
+
+    #error {
+        color: red;
+        margin-top: -8px;
+        margin-bottom: 12px;
+    }
+
+    footer {
+        margin-top: 50px;
+        padding: 20px;
+        background: #0a3d62;
+        color: #fff;
+        text-align: center;
+    }
+</style>
+
 </head>
 <body>
 
@@ -29,39 +109,65 @@
 </header>
 
 <div class="container">
-<h1>Contact Us</h1>
 
-<!-- Contact Form -->
-    <div class="card">
-        <form>
-            <label>Your Name</label>
-            <input type="text">
+    <h1>Contact Us</h1>
 
-            <br><br>
+    <div class="contact-grid">
 
-            <label>Your Mail</label>
-            <input type="text">
+        <!-- CONTACT FORM -->
+        <div class="card">
+            <form action="sendmail.php" method="POST" onsubmit="return validateForm();">
 
-            <br><br>
+                <label>Your Name</label>
+                <input type="text" id="name" name="name">
 
-            <label>Your Message</label>
-            <textarea></textarea>
+                <label>Your Mail</label>
+                <input type="text" id="mail" name="mail">
 
-            <button>Send Message</button>
-        </form>
-    </div>
+                <label>Your Message</label>
+                <textarea id="message" name="message"></textarea>
 
-    <!-- Office Info -->
-    <div class="card">
-        <h2>Office Address</h2>
-        <p>Dhaka, Bangladesh</p>
-        <p>Phone: +8801722458581</p>
-        <p>Mail: info@mspoint.com</p>
+                <p id="error"></p>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- OFFICE INFORMATION -->
+        <div class="card">
+            <h2>Office Address</h2>
+            <p>Dhaka, Bangladesh</p>
+            <p>Phone: +8801722458581</p>
+            <p>Mail: info@mspoint.com</p>
+        </div>
+
     </div>
 
 </div>
 
 <footer>© 2025 MS POINT. All Rights Reserved.</footer>
+
+<script>
+function validateForm() {
+    let name = document.getElementById("name").value.trim();
+    let mail = document.getElementById("mail").value.trim();
+    let message = document.getElementById("message").value.trim();
+    let error = document.getElementById("error");
+
+    if (name === "" || mail === "" || message === "") {
+        error.innerText = "All fields are required.";
+        return false;
+    }
+
+    let mailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!mailPattern.test(mail)) {
+        error.innerText = "Please enter a valid mail address.";
+        return false;
+    }
+
+    return true;
+}
+</script>
 
 </body>
 </html>
