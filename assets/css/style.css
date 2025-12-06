@@ -417,3 +417,13 @@ body.dark footer {
     color: #444;
     line-height: 1.5;
 }
+.whatsapp-header {
+    margin-left: 15px;
+    color: #0a3d62;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.whatsapp-header:hover {
+    color: #0984e3;
+}
