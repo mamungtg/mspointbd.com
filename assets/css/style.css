@@ -417,3 +417,78 @@ body.dark footer {
     color: #444;
     line-height: 1.5;
 }
+/* Floating button */
+.wa-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #0a3d62; /* MS POINT Blue */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 99999;
+    transition: 0.3s;
+}
+
+.wa-button img {
+    width: 34px;
+    height: 34px;
+}
+
+.wa-button:hover {
+    background: #06324f;
+}
+
+/* Popup box */
+.wa-popup {
+    width: 260px;
+    background: #fff;
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    display: none; /* hidden by default */
+    z-index: 99999;
+}
+
+.wa-popup-header {
+    background: #0a3d62;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wa-close {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.wa-popup-body {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.wa-popup-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #0a3d62;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wa-popup-btn:hover {
+    background: #06324f;
+}
