@@ -492,3 +492,17 @@ body.dark footer {
 .wa-popup-btn:hover {
     background: #06324f;
 }
+.whatsapp-qr {
+    text-align: center;
+    padding: 30px 10px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+.qr-image {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+}
