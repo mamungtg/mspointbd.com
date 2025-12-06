@@ -10,7 +10,20 @@
 <script src="assets/js/script.js" defer></script>
 </head>
 <body>
+<div class="wa-popup" id="waPopup">
+    <div class="wa-popup-header">
+        <strong>WhatsApp Support</strong>
+        <span class="wa-close" onclick="toggleWAPopup()">×</span>
+    </div>
+    <div class="wa-popup-body">
+        <p>Hi! Need help? Chat with us on WhatsApp.</p>
+        <a href="https://wa.me/8801722458581" target="_blank" class="wa-popup-btn">Start Chat</a>
+    </div>
+</div>
 
+<div class="wa-button" onclick="toggleWAPopup()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</div>
 <header class="site-header">
     <div id="brand-logo"></div>
 
@@ -188,20 +201,7 @@
     </div>
 </section>
 
-<div class="wa-popup" id="waPopup">
-    <div class="wa-popup-header">
-        <strong>WhatsApp Support</strong>
-        <span class="wa-close" onclick="toggleWAPopup()">×</span>
-    </div>
-    <div class="wa-popup-body">
-        <p>Hi! Need help? Chat with us on WhatsApp.</p>
-        <a href="https://wa.me/8801722458581" target="_blank" class="wa-popup-btn">Start Chat</a>
-    </div>
-</div>
 
-<div class="wa-button" onclick="toggleWAPopup()">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</div>
 
 <script>
 function toggleWAPopup() {
