@@ -417,21 +417,20 @@ body.dark footer {
     color: #444;
     line-height: 1.5;
 }
-/* Floating WhatsApp Button */
+/* Floating button */
 .wa-button {
     position: fixed;
     bottom: 25px;
     right: 25px;
     width: 60px;
     height: 60px;
-    background: #0a3d62;
+    background: #0a3d62; /* MS POINT Blue */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     cursor: pointer;
-    z-index: 9999;
+    z-index: 99999;
     transition: 0.3s;
 }
 
@@ -444,26 +443,20 @@ body.dark footer {
     background: #06324f;
 }
 
-/* WhatsApp Popup */
-.whatsapp-popup {
+/* Popup box */
+.wa-popup {
     width: 260px;
     background: #fff;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-    border-radius: 10px;
     position: fixed;
     bottom: 100px;
     right: 25px;
-    display: none;
-    z-index: 9999;
-    animation: waFadeIn 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    display: none; /* hidden by default */
+    z-index: 99999;
 }
 
-@keyframes waFadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.popup-header {
+.wa-popup-header {
     background: #0a3d62;
     color: #fff;
     padding: 12px;
@@ -474,29 +467,28 @@ body.dark footer {
     align-items: center;
 }
 
-.popup-close {
-    font-size: 20px;
+.wa-close {
     cursor: pointer;
+    font-size: 22px;
 }
 
-.popup-body {
+.wa-popup-body {
     padding: 15px;
-    color: #333;
+    font-size: 14px;
 }
 
-.popup-btn {
+.wa-popup-btn {
     display: block;
     width: 100%;
     text-align: center;
     padding: 10px;
     background: #0a3d62;
-    color: white;
+    color: #fff;
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 10px;
 }
 
-.popup-btn:hover {
+.wa-popup-btn:hover {
     background: #06324f;
 }

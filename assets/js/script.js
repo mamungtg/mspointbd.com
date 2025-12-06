@@ -24,9 +24,3 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "index.html";
     });
 });
-<script>
-function toggleWAPopup() {
-    let popup = document.getElementById("whatsappPopup");
-    popup.style.display = popup.style.display === "block" ? "none" : "block";
-}
-</script>
