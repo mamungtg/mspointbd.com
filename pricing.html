@@ -30,61 +30,177 @@
 </header>
 
 <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MS POINT | Pricing Plans</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        color: #222;
+    }
+
+    .pricing-section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: #0a3d62;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+        color: #555;
+    }
+
+    .pricing-grid {
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .pricing-card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        transition: all .3s ease;
+        border-top: 5px solid transparent;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        border-top: 5px solid #0a3d62;
+    }
+
+    .pricing-card h2 {
+        margin-top: 0;
+        color: #0a3d62;
+        font-size: 24px;
+    }
+
+    .desc {
+        color: #555;
+        font-size: 14px;
+        min-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 15px 0;
+        color: #111;
+    }
+
+    .price span {
+        font-size: 16px;
+        color: #666;
+    }
+
+    .custom {
+        font-size: 26px;
+        color: #0a3d62;
+    }
+
+    ul {
+        padding-left: 18px;
+        text-align: left;
+        margin-bottom: 25px;
+        color: #444;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        padding: 12px 20px;
+        border-radius: 6px;
+        background: #0a3d62;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background .2s ease;
+    }
+
+    .btn-primary:hover {
+        background: #07426e;
+    }
+
+    .popular {
+        border-top: 5px solid #ea4335;
+    }
+</style>
+</head>
+
+<body>
+
 <section class="pricing-section">
-    <div class="container">
-        <h1>Pricing Plans</h1>
-        <p class="subtitle">Flexible plans designed to support businesses of every size.</p>
+    <h1>Pricing Plans</h1>
+    <p class="subtitle">Flexible plans designed to support businesses of every size.</p>
 
-        <div class="pricing-grid">
+    <div class="pricing-grid">
 
-            <!-- Starter Plan -->
-            <div class="pricing-card">
-                <h2>Starter Plan</h2>
-                <p class="desc">Small businesses needing basic IT support and consulting.</p>
-                <div class="price">$199 <span>/ month</span></div>
-                <ul>
-                    <li>Basic IT support</li>
-                    <li>Consulting sessions</li>
-                    <li>System health checks</li>
-                </ul>
-                <a href="contact.html" class="btn-primary">Get Started</a>
-            </div>
-
-            <!-- Professional Plan -->
-            <div class="pricing-card popular">
-                <h2>Professional Plan</h2>
-                <p class="desc">
-                    Includes cybersecurity, DevOps automation, server management, and backup planning.
-                </p>
-                <div class="price">$499 <span>/ month</span></div>
-                <ul>
-                    <li>Advanced cybersecurity</li>
-                    <li>DevOps CI/CD automation</li>
-                    <li>Server management</li>
-                    <li>Backup & DR planning</li>
-                </ul>
-                <a href="contact.html" class="btn-primary">Choose Plan</a>
-            </div>
-
-            <!-- Enterprise Plan -->
-            <div class="pricing-card">
-                <h2>Enterprise Plan</h2>
-                <p class="desc">
-                    Tailored solutions for large organizations with 24/7 coverage.
-                </p>
-                <div class="price custom">Custom Pricing</div>
-                <ul>
-                    <li>Enterprise architecture</li>
-                    <li>24/7 monitoring & support</li>
-                    <li>Compliance & security frameworks</li>
-                    <li>Dedicated consultant team</li>
-                </ul>
-                <a href="contact.html" class="btn-primary">Contact Us</a>
-            </div>
-
+        <!-- Starter Plan -->
+        <div class="pricing-card">
+            <h2>Starter Plan</h2>
+            <p class="desc">Small businesses needing basic IT support and consulting.</p>
+            <div class="price">$199 <span>/ month</span></div>
+            <ul>
+                <li>Basic IT support</li>
+                <li>Consulting sessions</li>
+                <li>System health checks</li>
+            </ul>
+            <a href="contact.html" class="btn-primary">Get Started</a>
         </div>
+
+        <!-- Professional Plan -->
+        <div class="pricing-card popular">
+            <h2>Professional Plan</h2>
+            <p class="desc">Cybersecurity, DevOps automation, server management, and backup planning.</p>
+            <div class="price">$499 <span>/ month</span></div>
+            <ul>
+                <li>Advanced cybersecurity</li>
+                <li>DevOps CI/CD automation</li>
+                <li>Server management</li>
+                <li>Backup & DR planning</li>
+            </ul>
+            <a href="contact.html" class="btn-primary">Choose Plan</a>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="pricing-card">
+            <h2>Enterprise Plan</h2>
+            <p class="desc">Tailored solutions for large organizations with 24/7 coverage.</p>
+            <div class="price custom">Custom Pricing</div>
+            <ul>
+                <li>Enterprise architecture</li>
+                <li>24/7 monitoring & support</li>
+                <li>Compliance & security frameworks</li>
+                <li>Dedicated consultant team</li>
+            </ul>
+            <a href="contact.html" class="btn-primary">Contact Us</a>
+        </div>
+
     </div>
 </section>
+
+</body>
+</html>
 
 
 </div>
