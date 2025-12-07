@@ -158,20 +158,28 @@ footer {
     color: white;
     margin-left: 6px;    /* Small spacing between MS and POINT */
 }
-.fiverr-floating {
+/* Wrapper for icon + sliding text */
+.fiverr-wrapper {
     position: fixed;
-    right: 25px;
-    bottom: 25px;
+    right: 20px;
+    bottom: 20px;
     z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+/* Fiverr floating button */
+.fiverr-floating {
     background: #1dbf73;
-    padding: 10px;
+    padding: 12px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     transition: 0.3s ease;
+    animation: glow 2s infinite ease-in-out, bounce 3s infinite;
 }
 
 .fiverr-floating img {
@@ -180,7 +188,36 @@ footer {
     object-fit: contain;
 }
 
-.fiverr-floating:hover {
-    transform: scale(1.12);
-    background: #17a866;
+/* Glowing effect */
+@keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(29,191,115,0.4); }
+    50% { box-shadow: 0 0 22px rgba(29,191,115,0.9); }
+    100% { box-shadow: 0 0 10px rgba(29,191,115,0.4); }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* Sliding text */
+.fiverr-text {
+    background: #1dbf73;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-right: 10px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 0.4s ease;
+    white-space: nowrap;
+}
+
+/* Show text on hover */
+.fiverr-wrapper:hover .fiverr-text {
+    opacity: 1;
+    transform: translateX(0);
 }
