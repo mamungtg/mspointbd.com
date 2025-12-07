@@ -173,12 +173,8 @@ footer {
 }
 
 .fiverr-btn img {
-    width: 22px;       /* perfect icon size */
+    width: 22px;
     height: 22px;
     object-fit: contain;
-    border-radius: 50%; /* hides white corners if PNG has them */
-}
-
-.fiverr-btn:hover {
-    background: #17a866;
+    border-radius: 50%;
 }
