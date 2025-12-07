@@ -24,28 +24,3 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "index.html";
     });
 });
-function openFiverrPopup() {
-  document.getElementById("fiverrPopup").style.display = "block";
-
-  setTimeout(() => {
-    document.querySelector(".popup-content").classList.add("active");
-  }, 20);
-}
-
-function closeFiverrPopup() {
-  const content = document.querySelector(".popup-content");
-  content.classList.remove("active");
-
-  setTimeout(() => {
-    document.getElementById("fiverrPopup").style.display = "none";
-  }, 300);
-}
-
-window.onclick = function(event) {
-  const overlay = document.getElementById("fiverrPopup");
-  const box = document.querySelector(".popup-content");
-
-  if (event.target === overlay) {
-    closeFiverrPopup();
-  }
-};
