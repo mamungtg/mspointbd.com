@@ -33,8 +33,8 @@
     width: 48px;
     height: 48px;
     object-fit: contain;
+    filter: brightness(1.2); /* ensures visibility */
 }
-
 /* Fiverr Text */
 .hero-fiverr-text {
     color: #ffffff;
