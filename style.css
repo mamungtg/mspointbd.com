@@ -158,23 +158,29 @@ footer {
     color: white;
     margin-left: 6px;    /* Small spacing between MS and POINT */
 }
-.fiverr-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
-    padding: 10px 18px;
+.fiverr-floating {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
     background: #1dbf73;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 6px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    cursor: pointer;
     transition: 0.3s ease;
 }
 
-.fiverr-btn img {
-    width: 22px;
-    height: 22px;
+.fiverr-floating img {
+    width: 42px;
+    height: 42px;
     object-fit: contain;
-    border-radius: 50%;
+}
+
+.fiverr-floating:hover {
+    transform: scale(1.12);
+    background: #17a866;
 }
