@@ -24,23 +24,31 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "index.html";
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
+function openFiverrPopup() {
+  document.getElementById("fiverrPopup").style.display = "block";
+  
+  // Add slide effect
+  setTimeout(() => {
+    document.querySelector(".popup-content").classList.add("active");
+  }, 50);
+}
 
-    const hero = document.querySelector(".hero");
+function closeFiverrPopup() {
+  const content = document.querySelector(".popup-content");
+  content.classList.remove("active");
 
-    if (hero) {
-        const fiverrBox = document.createElement("div");
-        fiverrBox.className = "hero-right-box";
+  // Wait for animation to finish
+  setTimeout(() => {
+    document.getElementById("fiverrPopup").style.display = "none";
+  }, 300);
+}
 
-        fiverrBox.innerHTML = `
-            <img src="assets/img/fiverr-icon.png" class="hero-fiverr-icon">
-            <span>Hire Me on Fiverr</span>
-        `;
+// Close when clicking outside
+window.onclick = function(event) {
+  const overlay = document.getElementById("fiverrPopup");
+  const content = document.querySelector(".popup-content");
 
-        fiverrBox.addEventListener("click", function () {
-            window.open("https://www.fiverr.com/s/ljGaxjj", "_blank");
-        });
-
-        hero.appendChild(fiverrBox);
-    }
-});
+  if (event.target === overlay) {
+    closeFiverrPopup();
+  }
+};

@@ -5,7 +5,6 @@
 <title>MS POINT | IT Consulting & Business Solutions</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/fiverr.css">
 
 
 <script src="assets/js/theme.js" defer></script>
@@ -29,6 +28,22 @@
         <a href="contact.html">Contact</a>
     </nav>
 </header>
+<!-- Fiverr Popup Button -->
+<button class="open-button" onclick="openFiverrPopup()">View My Fiverr Profile</button>
+
+<!-- Popup Overlay -->
+<div class="popup-overlay" id="fiverrPopup">
+  <div class="popup-content slide-right">
+    <span class="close-button" onclick="closeFiverrPopup()">&times;</span>
+    
+    <h2>My Fiverr Profile</h2>
+    <p>Visit my official Fiverr page for more details:</p>
+
+    <a class="fiverr-link" href="https://www.fiverr.com/s/ljGaxjj" target="_blank">
+      Hire Me on Fiverr
+    </a>
+  </div>
+</div>
 
 <section class="hero">
     <img src="assets/img/hero-banner.jpg" alt="MS POINT IT Consulting" class="hero-img">
