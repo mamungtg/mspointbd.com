@@ -158,3 +158,32 @@ footer {
     color: white;
     margin-left: 6px;    /* Small spacing between MS and POINT */
 }
+.hero {
+    position: relative; /* ensure child is positioned correctly */
+}
+
+.hero-right-box {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.55);
+    padding: 18px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 20;
+}
+
+.hero-right-box:hover {
+    background: rgba(0,0,0,0.75);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.hero-fiverr-icon {
+    width: 48px;
+    height: 48px;
+}
