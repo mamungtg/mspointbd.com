@@ -10,7 +10,7 @@
 .hero-right-box {
     position: absolute;
     right: 40px;
-    top: 50%;
+    top: 60%;          /* moved down from 50% → 60% */
     transform: translateY(-50%);
     background: rgba(0,0,0,0.55);
     padding: 18px 25px;
@@ -22,6 +22,7 @@
     transition: 0.3s ease;
     z-index: 20;
 }
+
 
 .hero-right-box:hover {
     background: rgba(0,0,0,0.75);
