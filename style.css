@@ -158,12 +158,12 @@ footer {
     color: white;
     margin-left: 6px;    /* Small spacing between MS and POINT */
 }
-.fiverr-logo-btn {
+.fiverr-btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     margin-top: 20px;
-    padding: 12px 20px;
+    padding: 10px 18px;
     background: #1dbf73;
     color: #fff;
     font-weight: 600;
@@ -172,11 +172,13 @@ footer {
     transition: 0.3s ease;
 }
 
-.fiverr-logo-btn img {
-    width: 24px; /* adjust size as needed */
-    height: auto;
+.fiverr-btn img {
+    width: 22px;       /* perfect icon size */
+    height: 22px;
+    object-fit: contain;
+    border-radius: 50%; /* hides white corners if PNG has them */
 }
 
-.fiverr-logo-btn:hover {
+.fiverr-btn:hover {
     background: #17a866;
 }
