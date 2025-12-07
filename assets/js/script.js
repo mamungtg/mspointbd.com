@@ -24,3 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "index.html";
     });
 });
+window.addEventListener("scroll", function () {
+    const header = document.querySelector(".site-header");
+
+    if (window.scrollY > 20) {
+        header.classList.add("sticky-header");
+    } else {
+        header.classList.remove("sticky-header");
+    }
+});
