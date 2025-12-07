@@ -26,27 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function openFiverrPopup() {
   document.getElementById("fiverrPopup").style.display = "block";
-  
-  // Add slide effect
+
   setTimeout(() => {
     document.querySelector(".popup-content").classList.add("active");
-  }, 50);
+  }, 20);
 }
 
 function closeFiverrPopup() {
   const content = document.querySelector(".popup-content");
   content.classList.remove("active");
 
-  // Wait for animation to finish
   setTimeout(() => {
     document.getElementById("fiverrPopup").style.display = "none";
   }, 300);
 }
 
-// Close when clicking outside
 window.onclick = function(event) {
   const overlay = document.getElementById("fiverrPopup");
-  const content = document.querySelector(".popup-content");
+  const box = document.querySelector(".popup-content");
 
   if (event.target === overlay) {
     closeFiverrPopup();
