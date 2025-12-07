@@ -158,25 +158,3 @@ footer {
     color: white;
     margin-left: 6px;    /* Small spacing between MS and POINT */
 }
-/* Sticky Header */
-/* Force Sticky Header */
-.site-header {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 99999 !important;
-    background: #0a3d62;
-    padding: 15px 20px;
-}
-
-
-body {
-    padding-top: 120px !important;
-}
-
-/* Optional: Add shadow when sticky */
-.sticky-header {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-}
