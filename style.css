@@ -158,10 +158,18 @@ footer {
     color: white;
     margin-left: 6px;    /* Small spacing between MS and POINT */
 }
-.fiverr-popup {
+/* Wrapper holds both popup icon + message */
+.fiverr-wrapper {
     position: fixed;
     right: 25px;
-    bottom: 25px;
+    bottom: 120px;     /* HIGHER POSITION */
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+/* Popup round Fiverr button */
+.fiverr-popup {
     width: 55px;
     height: 55px;
     background: #1dbf73;
@@ -170,16 +178,39 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 9999;
     animation: popupZoom 0.6s ease-out;
+    cursor: pointer;
 }
 
+/* 24px Fiverr icon */
 .fiverr-popup img {
     width: 24px !important;
     height: 24px !important;
     object-fit: contain;
 }
 
+/* Message bubble */
+.fiverr-msg {
+    background: #1dbf73;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 12px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 0.4s ease;
+    white-space: nowrap;
+}
+
+/* Show message when hovering the wrapper */
+.fiverr-wrapper:hover .fiverr-msg {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Popup zoom animation */
 @keyframes popupZoom {
     0% { transform: scale(0); opacity: 0; }
     60% { transform: scale(1.15); opacity: 1; }
