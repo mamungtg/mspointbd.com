@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("scroll", function () {
     const header = document.querySelector(".site-header");
 
-    if (window.scrollY > 20) {
-        header.classList.add("sticky-header");
+    if (window.scrollY > 30) {
+        header.classList.add("scrolled");
     } else {
-        header.classList.remove("sticky-header");
+        header.classList.remove("scrolled");
     }
 });

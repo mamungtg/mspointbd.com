@@ -159,19 +159,21 @@ footer {
     margin-left: 6px;    /* Small spacing between MS and POINT */
 }
 /* Sticky Header */
+/* Force Sticky Header */
 .site-header {
-    position: fixed;
+    position: fixed !important;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    z-index: 9999;
-    background: #0a3d62; /* Your brand color */
-    padding: 15px 0;
-    transition: all 0.3s ease;
+    z-index: 99999 !important;
+    background: #0a3d62;
+    padding: 15px 20px;
 }
 
-/* Add top padding so page content is not hidden */
+
 body {
-    padding-top: 90px; /* Adjust if your header height changes */
+    padding-top: 120px !important;
 }
 
 /* Optional: Add shadow when sticky */
