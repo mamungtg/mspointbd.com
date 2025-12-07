@@ -158,3 +158,25 @@ footer {
     color: white;
     margin-left: 6px;    /* Small spacing between MS and POINT */
 }
+.fiverr-logo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #1dbf73;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.fiverr-logo-btn img {
+    width: 24px; /* adjust size as needed */
+    height: auto;
+}
+
+.fiverr-logo-btn:hover {
+    background: #17a866;
+}
