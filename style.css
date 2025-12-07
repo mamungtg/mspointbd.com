@@ -158,10 +158,3 @@ footer {
     color: white;
     margin-left: 6px;    /* Small spacing between MS and POINT */
 }
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    background: #0a3d62; /* your brand color */
-    padding: 12px 0;
-}
