@@ -49,11 +49,14 @@
         text-align: center;
     }
 
+    /* Section horizontal padding only
+       (vertical spacing handled elsewhere) */
     .ms-value,
     .ms-services,
     .ms-process,
     .ms-cta {
-        padding: 48px 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .value-grid,
