@@ -1,9 +1,11 @@
 /* =====================================================
    Managed Services – Vertical Spacing & Readability
-   Improves visual rhythm, clarity, and hierarchy
+   Enterprise UI Rhythm (Clean & Predictable)
    ===================================================== */
 
-/* Global paragraph spacing */
+/* ---------------------------------
+   Global paragraph readability
+---------------------------------- */
 .managed-services p,
 .ms-hero p,
 .ms-value p,
@@ -14,26 +16,43 @@
     line-height: 1.8;
 }
 
-/* Section spacing */
+/* ---------------------------------
+   Hero spacing
+---------------------------------- */
 .ms-hero {
-    padding-bottom: 100px;
+    padding-bottom: 90px;
 }
 
+/* ---------------------------------
+   Section top spacing (REDUCED)
+---------------------------------- */
 .ms-value,
 .ms-services,
 .ms-process {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
-/* Headings spacing */
+/* CTA keeps more emphasis */
+.ms-cta {
+    margin-top: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* ---------------------------------
+   Headings spacing
+---------------------------------- */
 .ms-value h2,
 .ms-services h2,
 .ms-process h2,
 .ms-cta h2 {
-    margin-bottom: 36px;
+    margin-top: 0;
+    margin-bottom: 28px;
 }
 
-/* Value blocks spacing */
+/* ---------------------------------
+   Value blocks
+---------------------------------- */
 .value-grid > div {
     padding-top: 10px;
 }
@@ -43,10 +62,12 @@
 }
 
 .value-grid p {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
-/* Service cards spacing */
+/* ---------------------------------
+   Service cards
+---------------------------------- */
 .service-card {
     padding: 30px;
 }
@@ -59,23 +80,16 @@
     margin-bottom: 10px;
 }
 
-/* Process steps spacing */
+/* ---------------------------------
+   Process steps
+---------------------------------- */
 .process-steps li {
     margin-bottom: 18px;
 }
 
-/* CTA spacing */
-.ms-cta {
-    margin-top: 100px;
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
-
-.ms-cta p {
-    margin-bottom: 30px;
-}
-
-/* Mobile refinement */
+/* ---------------------------------
+   Mobile refinement
+---------------------------------- */
 @media (max-width: 768px) {
 
     .ms-hero {
@@ -85,7 +99,13 @@
     .ms-value,
     .ms-services,
     .ms-process {
-        margin-top: 60px;
+        margin-top: 32px;
+    }
+
+    .ms-cta {
+        margin-top: 48px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .service-card {
@@ -94,47 +114,5 @@
 
     .process-steps li {
         margin-bottom: 16px;
-    }
-}
-/* =====================================================
-   Managed Services – Reduce Excess Top Spacing
-   Targeted Section Heading Adjustments
-   ===================================================== */
-
-/* Reduce space ABOVE section headings */
-.ms-value {
-    margin-top: 40px;   /* was ~80px */
-}
-
-.ms-services {
-    margin-top: 40px;
-}
-
-.ms-process {
-    margin-top: 40px;
-}
-
-.ms-cta {
-    margin-top: 60px;   /* CTA still needs breathing room */
-}
-
-/* Tighten heading spacing slightly */
-.ms-value h2,
-.ms-services h2,
-.ms-process h2,
-.ms-cta h2 {
-    margin-top: 0;
-    margin-bottom: 28px;
-}
-@media (max-width: 768px) {
-
-    .ms-value,
-    .ms-services,
-    .ms-process {
-        margin-top: 32px;
-    }
-
-    .ms-cta {
-        margin-top: 48px;
     }
 }
