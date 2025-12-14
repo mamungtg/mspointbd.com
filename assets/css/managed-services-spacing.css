@@ -1,6 +1,6 @@
 /* =====================================================
    Managed Services – Vertical Spacing & Readability
-   Enterprise UI Rhythm (Tight, Clean, Predictable)
+   Enterprise UI Rhythm (Compact, Clean, Predictable)
    ===================================================== */
 
 /* ---------------------------------
@@ -12,31 +12,33 @@
 .ms-services p,
 .ms-process p,
 .ms-cta p {
-    margin-bottom: 22px;
-    line-height: 1.8;
+    margin-bottom: 20px;   /* slightly tighter */
+    line-height: 1.75;
 }
 
 /* ---------------------------------
-   Hero spacing
+   Hero spacing (REDUCED ~50%)
 ---------------------------------- */
 .ms-hero {
-    padding-bottom: 60px;
+    padding-bottom: 40px;   /* was 60px */
 }
 
 /* ---------------------------------
-   Section-to-section spacing (TIGHT)
+   Section-to-section spacing (REDUCED ~50%)
 ---------------------------------- */
 .ms-value,
 .ms-services,
 .ms-process {
-    margin-top: 28px;
+    margin-top: 16px;   /* was 28px */
 }
 
-/* CTA spacing (still prominent, but tighter) */
+/* ---------------------------------
+   CTA spacing (still visible, but tighter)
+---------------------------------- */
 .ms-cta {
-    margin-top: 40px;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    margin-top: 24px;        /* was 40px */
+    padding-top: 48px;       /* was 64px */
+    padding-bottom: 48px;
 }
 
 /* ---------------------------------
@@ -47,72 +49,72 @@
 .ms-process h2,
 .ms-cta h2 {
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 22px;   /* was 28px */
 }
 
 /* ---------------------------------
    Value blocks spacing
 ---------------------------------- */
 .value-grid > div {
-    padding-top: 10px;
+    padding-top: 6px;
 }
 
 .value-grid h3 {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 .value-grid p {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 
 /* ---------------------------------
    Service cards spacing
 ---------------------------------- */
 .service-card {
-    padding: 30px;
+    padding: 26px;   /* was 30px */
 }
 
 .service-card h3 {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 .service-card ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 /* ---------------------------------
    Process steps spacing
 ---------------------------------- */
 .process-steps li {
-    margin-bottom: 18px;
+    margin-bottom: 14px;   /* was 18px */
 }
 
 /* ---------------------------------
-   Mobile refinement
+   Mobile refinement (extra tight)
 ---------------------------------- */
 @media (max-width: 768px) {
 
     .ms-hero {
-        padding-bottom: 48px;
+        padding-bottom: 32px;
     }
 
     .ms-value,
     .ms-services,
     .ms-process {
-        margin-top: 20px;
+        margin-top: 12px;
     }
 
     .ms-cta {
-        margin-top: 32px;
-        padding-top: 48px;
-        padding-bottom: 48px;
+        margin-top: 20px;
+        padding-top: 36px;
+        padding-bottom: 36px;
     }
 
     .service-card {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
 
     .process-steps li {
-        margin-bottom: 16px;
+        margin-bottom: 12px;
     }
 }
