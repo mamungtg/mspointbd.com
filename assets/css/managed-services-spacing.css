@@ -96,3 +96,45 @@
         margin-bottom: 16px;
     }
 }
+/* =====================================================
+   Managed Services – Reduce Excess Top Spacing
+   Targeted Section Heading Adjustments
+   ===================================================== */
+
+/* Reduce space ABOVE section headings */
+.ms-value {
+    margin-top: 40px;   /* was ~80px */
+}
+
+.ms-services {
+    margin-top: 40px;
+}
+
+.ms-process {
+    margin-top: 40px;
+}
+
+.ms-cta {
+    margin-top: 60px;   /* CTA still needs breathing room */
+}
+
+/* Tighten heading spacing slightly */
+.ms-value h2,
+.ms-services h2,
+.ms-process h2,
+.ms-cta h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+@media (max-width: 768px) {
+
+    .ms-value,
+    .ms-services,
+    .ms-process {
+        margin-top: 32px;
+    }
+
+    .ms-cta {
+        margin-top: 48px;
+    }
+}
