@@ -2,56 +2,96 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Banking Infrastructure Modernization | MS POINT</title>
+<title>Banking Infrastructure Modernization | Case Study | MS POINT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
 
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="assets/js/theme.js" defer></script>
+<script src="assets/js/script.js" defer></script>
+</head>
 <body>
 
 <header class="site-header">
     <div id="brand-logo"></div>
-    <nav class="main-menu">
+
+    <nav class="main-menu" aria-label="Primary Navigation">
         <a href="index.html">Home</a>
-        <a href="case-studies.html">Case Studies</a>
+        <a href="services.html">Services</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="industries.html">Industries</a>
+        <a href="case-studies.html" class="active">Case Studies</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<section class="case-details">
+<div class="container">
 
-    <div class="case-banner">
-        <img src="assets/img/case-banking.jpg" alt="Banking Infrastructure Modernization">
-        <h1>Banking Infrastructure Modernization</h1>
-    </div>
+<section class="case-study-single">
 
-    <div class="case-content">
-        <h2>Client Overview</h2>
-        <p>A financial institution with multiple branches suffering from outdated systems, unstable Active Directory, and weak security compliance.</p>
+    <h1>Banking Infrastructure Modernization</h1>
+    <p class="case-subtitle">
+        Secure, resilient, and compliant infrastructure for multi-branch banking operations
+    </p>
 
-        <h2>Challenges</h2>
-        <ul>
-            <li>Unstable Windows/Linux infrastructure</li>
-            <li>No redundancy or failover mechanisms</li>
-            <li>Weak AD structure and poor security posture</li>
-            <li>High downtime and no centralized monitoring</li>
-        </ul>
+    <hr>
 
-        <h2>Solutions Implemented</h2>
-        <ul>
-            <li>Built a new VMware/Hyper-V virtualization cluster</li>
-            <li>Designed hardened Active Directory & Group Policies</li>
-            <li>Implemented firewall segmentation & monitoring (PRTG/Zabbix)</li>
-            <li>Migrated core services to optimized servers</li>
-        </ul>
+    <h2>Client Overview</h2>
+    <p>
+        A financial institution operating multiple branch offices faced recurring
+        outages, outdated infrastructure, weak Active Directory design, and limited
+        security compliance. The organization required a complete modernization
+        of its on-premises and branch IT environment.
+    </p>
 
-        <h2>Outcome</h2>
-        <p>The client achieved 99.9% uptime, improved branch-to-HO connectivity, enhanced security, and full visibility across infrastructure.</p>
-    </div>
+    <h2>Challenges</h2>
+    <ul>
+        <li>Unstable Windows and Linux server environments</li>
+        <li>Lack of redundancy, disaster recovery, and failover planning</li>
+        <li>Poorly structured Active Directory and access controls</li>
+        <li>Limited monitoring and delayed incident detection</li>
+        <li>Frequent downtime impacting branch productivity</li>
+    </ul>
+
+    <h2>Solution Delivered</h2>
+    <ul>
+        <li>Designed and deployed VMware / Hyper-V virtualization clusters</li>
+        <li>Rebuilt Active Directory with hardened Group Policies and OU structure</li>
+        <li>Implemented firewall segmentation and secure inter-branch connectivity</li>
+        <li>Deployed centralized monitoring using PRTG and Zabbix</li>
+        <li>Migrated and optimized core banking services with minimal downtime</li>
+    </ul>
+
+    <h2>Technologies Used</h2>
+    <p>
+        VMware, Hyper-V, Windows Server, Linux, Active Directory,
+        Group Policy, Firewall Segmentation, PRTG, Zabbix,
+        Backup & Disaster Recovery
+    </p>
+
+    <h2>Outcome</h2>
+    <ul>
+        <li>99.9% infrastructure uptime across all branches</li>
+        <li>Improved security posture and regulatory readiness</li>
+        <li>Faster incident detection and response</li>
+        <li>Scalable architecture ready for future expansion</li>
+        <li>Significant reduction in operational downtime</li>
+    </ul>
+
+    <a href="case-studies.html" class="btn-back">
+        ← Back to Case Studies
+    </a>
 
 </section>
 
-<footer class="site-footer">
-    <p>© 2025 MS POINT | IT Consulting & Business Solutions</p>
+</div>
+
+<footer>
+    © 2025 MS POINT | IT Consulting & Business Solutions
 </footer>
 
 </body>
