@@ -60,3 +60,93 @@
     padding: 72px 20px;
     text-align: center;
 }
+/* ======================================
+   Mobile & Tablet Responsiveness
+   Managed Services Landing Page
+   ====================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .ms-hero h1 {
+        font-size: 32px;
+    }
+
+    .ms-hero p {
+        font-size: 18px;
+    }
+
+    .value-grid,
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .ms-hero {
+        padding: 60px 16px;
+    }
+
+    .ms-hero h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .ms-hero p {
+        font-size: 17px;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .ms-value,
+    .ms-services,
+    .ms-process,
+    .ms-cta {
+        padding: 48px 16px;
+    }
+
+    .value-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 22px;
+    }
+
+    .process-steps {
+        padding-left: 18px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .ms-hero h1 {
+        font-size: 24px;
+    }
+
+    .ms-hero p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .btn-primary {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
