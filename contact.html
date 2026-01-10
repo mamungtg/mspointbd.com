@@ -115,11 +115,26 @@
     <div class="contact-grid">
 
         <!-- CONTACT FORM -->
+        <div class="card">
+            <form action="sendmail.php" method="POST" onsubmit="return validateForm();">
 
+                <label>Your Name</label>
+                <input type="text" id="name" name="name">
+
+                <label>Your Mail</label>
+                <input type="text" id="mail" name="mail">
+
+                <label>Your Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <p id="error"></p>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
 
         <!-- OFFICE INFORMATION -->
         <div class="card">
-            <h2>level-1, Rahman’s Regnum Centre, Bir Uttam Mir Shawkat Sarak</h2>
             <p>Dhaka, Bangladesh</p>
             <p>Phone: +8801722458581</p>
             <p>Mail: support@mspointbd.com</p>
