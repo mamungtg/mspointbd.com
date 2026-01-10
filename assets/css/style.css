@@ -178,17 +178,20 @@ body.dark footer {
    RESPONSIVE STYLES
 ------------------------------------------ */
 @media (max-width: 768px) {
-    .site-header {
+    .header-inner {
         flex-direction: column;
+        align-items: center;
         gap: 12px;
-        padding: 15px;
+        padding: 15px 20px;
     }
 
     .main-menu {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 14px;
     }
+}
+
 
     .hero {
         min-height: 350px;
