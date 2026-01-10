@@ -40,15 +40,24 @@ body.dark {
    HEADER
 ------------------------------------------ */
 .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
     background: #0a3d62;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 12px 40px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
 }
+
 body {
     padding-top: 80px;
 }
