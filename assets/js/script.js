@@ -24,3 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "index.html";
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(
+        ".value-grid div, .service-card, .process-steps li"
+    );
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    items.forEach(item => observer.observe(item));
+});

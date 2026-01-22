@@ -1,0 +1,151 @@
+/* HERO */
+.ms-hero {
+    background: linear-gradient(135deg, #020617, #0b1c2d);
+    color: #ffffff;
+    padding: 70px 0;
+    position: relative;
+}
+
+.hero-inner {
+    max-width: 1100px;
+}
+
+.ms-hero h1 {
+    font-size: 40px;
+    margin: 10px 0 12px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.ms-hero p {
+    max-width: 760px;
+    margin: 0 0 20px;
+    color: #cbd5f5;
+    font-size: 16px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    color: #e0f2fe;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+
+.hero-actions {
+    margin-top: 18px;
+    display: flex;
+    gap: 16px;
+}
+.btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.08);
+}
+/* VALUE GRID */
+.value-grid div {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 20px 40px rgba(2,6,23,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.value-grid div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px rgba(2,6,23,0.15);
+}
+/* SERVICE CARDS */
+.service-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 34px;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 5px;
+    background: linear-gradient(90deg, #2563eb, #38bdf8);
+}
+/* PROCESS */
+.process-steps li {
+    background: #f8fafc;
+    border-left: 4px solid #2563eb;
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+/* CTA */
+.ms-cta {
+    background: linear-gradient(135deg, #020617, #0b1c2d);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+.ms-cta h2 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.ms-cta p {
+    margin: 0 0 14px;
+    font-size: 14px;
+    color: #cbd5f5;
+}
+.fade-in {
+    animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .ms-hero {
+        padding: 50px 0;
+    }
+
+    .ms-hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
