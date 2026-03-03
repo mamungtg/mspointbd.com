@@ -2,98 +2,227 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Email Infrastructure & Deliverability Optimization | Case Study | MS POINT</title>
+<title>Case Study: Email Deliverability Fix | MS POINT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/theme.js" defer></script>
 <script src="assets/js/script.js" defer></script>
+
+<style>
+/* Case Study Only Styling */
+.case-study-wrapper {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+.case-study-wrapper h1 { margin-bottom: 10px; }
+
+.case-study-wrapper h2 {
+    margin-top: 40px;
+    color: #1f2937;
+}
+
+.case-study-wrapper .featured-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.case-study-wrapper .highlight-results {
+    background: #f0f7ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.case-study-wrapper .case-study-box {
+    background: #f4f6f8;
+    padding: 20px;
+    border-left: 6px solid #2563eb;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.case-study-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.case-study-wrapper th,
+.case-study-wrapper td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.case-study-wrapper th {
+    background: #f8fafc;
+}
+
+.case-study-wrapper .impact-box {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+</style>
+
 </head>
+
 <body>
 
 <header class="site-header">
-	<div class="header-inner">
-    <div id="brand-logo"></div>
+    <div class="header-inner">
+        <div id="brand-logo">
+            <a href="index.html" class="site-title">MS POINT</a>
+        </div>
 
-    <nav class="main-menu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="solutions.html">Solutions</a>
-        <a href="industries.html">Industries</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="about.html">About</a>
-        <a href="team.html">Team</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-	</div>
+        <nav class="main-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="industries.html">Industries</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <div class="container">
 
-<section class="case-study-single">
+<section class="case-study-wrapper">
 
-    <h1>Email Infrastructure & Deliverability Optimization</h1>
-    <p class="case-subtitle">
-        Secure, compliant, and high-deliverability mail systems for business communication
-    </p>
+<h1>Case Study: Email Deliverability Fix and Inbox Recovery</h1>
+<p><strong>From 32% Inbox Placement to 91% in 4 Weeks</strong></p>
 
-    <hr>
+<img class="featured-image" 
+     src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=1200&q=80" 
+     alt="Email deliverability analytics dashboard">
 
-    <h2>Client Overview</h2>
-    <p>
-        A growing organization faced persistent mail delivery failures, spam flagging,
-        and unreliable mail performance across multiple domains. The client required
-        a stable, secure, and compliant mail infrastructure to support transactional
-        and business-critical communication.
-    </p>
+<p>
+Email deliverability is not just about sending emails. It is about ensuring those emails reach the inbox consistently. 
+This case study demonstrates how structured infrastructure corrections and reputation recovery improved overall inbox performance significantly.
+</p>
 
-    <h2>Challenges</h2>
+<h2>Client Background</h2>
+
+<p>
+A SaaS startup was running cold outreach campaigns through Amazon SES. 
+Despite strong messaging and targeting, a large percentage of emails were landing in spam.
+</p>
+
+<div class="case-study-box">
+    <h3>Core Problems Identified</h3>
     <ul>
-        <li>Messages landing in spam or being rejected</li>
-        <li>Misconfigured SPF, DKIM, and DMARC records</li>
-        <li>Unstable mail server performance and storage issues</li>
-        <li>Lack of monitoring and visibility into mail flow</li>
-        <li>Poor sender reputation and inconsistent authentication</li>
+        <li>Duplicate SPF records causing authentication failures</li>
+        <li>DKIM misalignment with sending domain</li>
+        <li>No DMARC monitoring policy</li>
+        <li>800 emails per day sent from a newly registered domain</li>
+        <li>Cold outreach and transactional emails mixed under one domain</li>
     </ul>
+</div>
 
-    <h2>Solution Delivered</h2>
-    <ul>
-        <li>Audited complete mail infrastructure and DNS configuration</li>
-        <li>Implemented SPF, DKIM, DMARC, and BIMI correctly</li>
-        <li>Optimized SMTP routing and mail server performance</li>
-        <li>Secured mail services with TLS, rate limiting, and anti-abuse controls</li>
-        <li>Configured monitoring and alerting for mail delivery issues</li>
-        <li>Provided best-practice guidance for ongoing sender reputation management</li>
-    </ul>
+<h2>Solution Implementation</h2>
 
-    <h2>Technologies Used</h2>
-    <p>
-        SMTP, DNS, SPF, DKIM, DMARC, BIMI,
-        Postfix, Exim, Zimbra, cPanel Mail,
-        Mail Security & Monitoring
-    </p>
+<h3>1. Authentication Correction</h3>
+<p>
+SPF was consolidated into a single optimized record. DKIM was properly configured and aligned. 
+DMARC was introduced with <strong>p=none</strong> for monitoring before gradually moving to enforcement. 
+Reverse DNS (PTR) was also corrected.
+</p>
 
-    <h2>Outcome</h2>
-    <ul>
-        <li>Significant improvement in inbox placement</li>
-        <li>Stable and reliable mail delivery across providers</li>
-        <li>Improved sender reputation and trust</li>
-        <li>Reduced mail failures and user complaints</li>
-        <li>Secure and compliant mail infrastructure</li>
-    </ul>
+<h3>2. Domain Segmentation</h3>
+<ul>
+    <li><strong>mail.company.com</strong> for transactional communication</li>
+    <li><strong>outreach.company.com</strong> for cold campaigns</li>
+</ul>
+<p>This separation protected business-critical mail flow.</p>
 
-    <a href="case-studies.html" class="btn-back">
-        ← Back to Case Studies
-    </a>
+<h3>3. Warm-Up and Volume Control</h3>
+<p>Sending was paused for 5 days, then gradually resumed:</p>
+<ul>
+    <li>Week 1: 30 emails/day</li>
+    <li>Week 2: 60 emails/day</li>
+    <li>Week 3: 100 emails/day</li>
+    <li>Week 4: 200 emails/day</li>
+</ul>
+
+<h3>4. Content Simplification</h3>
+<p>
+Heavy HTML templates were replaced with plain text emails, personalized introductions, and only one contextual link.
+</p>
+
+<h2>Performance Comparison</h2>
+
+<table>
+<tr>
+<th>Metric</th>
+<th>Before Optimization</th>
+<th>After 4 Weeks</th>
+</tr>
+<tr>
+<td>Inbox Placement</td>
+<td>32%</td>
+<td>91%</td>
+</tr>
+<tr>
+<td>Bounce Rate</td>
+<td>6.8%</td>
+<td>1.8%</td>
+</tr>
+<tr>
+<td>Spam Complaints</td>
+<td>0.9%</td>
+<td>0.05%</td>
+</tr>
+<tr>
+<td>Open Rate</td>
+<td>18%</td>
+<td>47%</td>
+</tr>
+</table>
+
+<div class="highlight-results">
+<h3>Key Recovery Result</h3>
+<p>
+Inbox placement increased by 59 percentage points within four weeks while maintaining low complaint and bounce rates.
+</p>
+</div>
+
+<h2>Business Impact</h2>
+
+<div class="impact-box">
+<ul>
+<li>Reliable transactional email delivery restored</li>
+<li>Improved domain reputation across Gmail and Microsoft</li>
+<li>Reduced support tickets related to missing emails</li>
+<li>Stronger domain protection against spoofing</li>
+<li>Scalable and compliant email infrastructure</li>
+</ul>
+</div>
+
+<h2>Conclusion</h2>
+
+<p>
+Email deliverability recovery requires technical accuracy, controlled volume growth, and disciplined monitoring. 
+When authentication alignment, domain segmentation, and structured warm-up strategies are properly implemented, inbox placement becomes sustainable.
+</p>
 
 </section>
-
 
 </div>
 
 <footer>
-    © 2025 MS POINT | IT Consulting & Business Solutions
+© 2025 MS POINT | IT Consulting & Business Solutions
 </footer>
 
 </body>
