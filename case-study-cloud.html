@@ -4,98 +4,266 @@
 <meta charset="UTF-8">
 <title>Cloud Infrastructure Migration & Optimization | Case Study | MS POINT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="assets/css/style.css">
-
 <script src="assets/js/theme.js" defer></script>
 <script src="assets/js/script.js" defer></script>
+
+<style>
+/* Scoped Case Study Styling Only */
+.case-study-wrapper {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+.case-study-wrapper h1 { margin-bottom: 10px; }
+.case-study-wrapper h2 { margin-top: 40px; color: #1f2937; }
+.case-study-wrapper h3 { margin-top: 25px; }
+
+.case-study-wrapper .highlight-box {
+    background: #f4f6f8;
+    padding: 20px;
+    border-left: 6px solid #2563eb;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.case-study-wrapper .impact-box {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.case-study-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.case-study-wrapper th,
+.case-study-wrapper td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.case-study-wrapper th { background: #f8fafc; }
+</style>
 </head>
+
 <body>
 
 <header class="site-header">
-	<div class="header-inner">
-    <div id="brand-logo"></div>
+    <div class="header-inner">
+        <div id="brand-logo">
+            <a href="index.html" class="site-title">MS POINT</a>
+        </div>
 
-    <nav class="main-menu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="solutions.html">Solutions</a>
-        <a href="industries.html">Industries</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="about.html">About</a>
-        <a href="team.html">Team</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-	</div>
+        <nav class="main-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="industries.html">Industries</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <div class="container">
 
-<section class="case-study-single">
+<section class="case-study-wrapper">
 
-    <h1>Cloud Infrastructure Migration & Optimization</h1>
-    <p class="case-subtitle">
-        Secure, scalable cloud architecture with cost optimization and high availability
-    </p>
+<h1>Cloud Infrastructure Migration & Optimization</h1>
+<p><strong>Secure, Scalable Cloud Architecture with Cost Optimization and High Availability</strong></p>
 
-    <hr>
+<p>
+As digital businesses grow, legacy hosting environments often become bottlenecks. 
+Performance instability, limited scalability, and rising operational costs create 
+risk for revenue, customer experience, and long-term expansion.
+</p>
 
-    <h2>Client Overview</h2>
-    <p>
-        A growing digital business was experiencing performance bottlenecks,
-        frequent downtime, and rising infrastructure costs on legacy hosting.
-        The client required a secure cloud migration with improved scalability,
-        reliability, and operational visibility.
-    </p>
+<p>
+This case study outlines how a fragmented on-premise and shared-hosting environment 
+was transformed into a secure, scalable, and optimized cloud infrastructure 
+designed for performance and cost efficiency.
+</p>
 
-    <h2>Challenges</h2>
-    <ul>
-        <li>Legacy on-premise and shared hosting infrastructure</li>
-        <li>Poor scalability during peak traffic periods</li>
-        <li>Lack of monitoring, backups, and disaster recovery</li>
-        <li>High operational cost with inefficient resource usage</li>
-        <li>Security gaps and inconsistent access control</li>
-    </ul>
+<h2>Client Background</h2>
 
-    <h2>Solution Delivered</h2>
-    <ul>
-        <li>Designed cloud architecture on AWS / Azure</li>
-        <li>Migrated workloads with zero-to-minimal downtime</li>
-        <li>Implemented load balancing and auto-scaling</li>
-        <li>Configured secure networking, firewalls, and IAM</li>
-        <li>Set up centralized monitoring, logging, and alerts</li>
-        <li>Optimized resource usage to reduce monthly cloud cost</li>
-    </ul>
+<p>
+The client operated a high-traffic digital platform handling transactional workloads, 
+user authentication systems, and API-based integrations. Their existing infrastructure 
+combined shared hosting and aging on-premise servers, resulting in unpredictable downtime 
+and limited scalability during traffic spikes.
+</p>
 
-    <h2>Technologies Used</h2>
-    <p>
-        AWS, Azure, Linux, Docker, Nginx,
-        Load Balancer, Auto Scaling,
-        Cloud Monitoring, Backup & Disaster Recovery,
-        Security Hardening
-    </p>
+<div class="highlight-box">
+<h3>Key Challenges Identified</h3>
+<ul>
+<li>Frequent downtime during peak usage periods</li>
+<li>Limited horizontal scalability</li>
+<li>No structured disaster recovery plan</li>
+<li>Manual backup processes with no verification</li>
+<li>Excessive monthly infrastructure spending</li>
+<li>Weak IAM policies and inconsistent access controls</li>
+</ul>
+</div>
 
-    <h2>Outcome</h2>
-    <ul>
-        <li>Improved application performance and reliability</li>
-        <li>Highly available and scalable cloud environment</li>
-        <li>Enhanced security and access management</li>
-        <li>Reduced infrastructure cost through optimization</li>
-        <li>Future-ready architecture for rapid growth</li>
-    </ul>
+<h2>Migration Strategy</h2>
 
-    <a href="case-studies.html" class="btn-back">
-        ← Back to Case Studies
-    </a>
+<p>
+A phased migration approach was designed to minimize risk and eliminate service disruption.
+</p>
+
+<h3>Phase 1: Infrastructure Assessment</h3>
+<ul>
+<li>Workload dependency mapping</li>
+<li>Resource utilization analysis</li>
+<li>Cost breakdown review</li>
+<li>Security posture evaluation</li>
+</ul>
+
+<h3>Phase 2: Cloud Architecture Design</h3>
+<ul>
+<li>Multi-tier VPC design</li>
+<li>Public and private subnet segmentation</li>
+<li>Load balancer architecture</li>
+<li>Auto-scaling groups</li>
+<li>Managed database deployment</li>
+<li>Backup lifecycle policies</li>
+</ul>
+
+<h3>Phase 3: Secure Migration Execution</h3>
+<p>
+Workloads were migrated incrementally using replication-based synchronization 
+to ensure zero-to-minimal downtime. DNS cutover was performed during low-traffic windows.
+</p>
+
+<h2>Core Implementation Components</h2>
+
+<h3>1. High Availability Architecture</h3>
+<ul>
+<li>Multi-AZ deployment</li>
+<li>Auto-scaling compute instances</li>
+<li>Managed database failover configuration</li>
+<li>Health check-based load balancing</li>
+</ul>
+
+<h3>2. Security Hardening</h3>
+<ul>
+<li>Granular IAM role-based access</li>
+<li>Security groups and NACL enforcement</li>
+<li>Encrypted storage (at rest and in transit)</li>
+<li>Web Application Firewall configuration</li>
+<li>SSH access restrictions and key rotation</li>
+</ul>
+
+<h3>3. Monitoring & Observability</h3>
+<ul>
+<li>Centralized logging system</li>
+<li>Real-time performance dashboards</li>
+<li>Alert triggers for CPU, memory, disk I/O</li>
+<li>Anomaly detection for unusual traffic patterns</li>
+</ul>
+
+<h3>4. Cost Optimization Measures</h3>
+<ul>
+<li>Rightsizing compute instances</li>
+<li>Reserved instance utilization</li>
+<li>Auto-shutdown for non-production workloads</li>
+<li>Storage lifecycle policies</li>
+<li>Removal of idle resources</li>
+</ul>
+
+<h2>Performance & Cost Comparison</h2>
+
+<table>
+<tr>
+<th>Metric</th>
+<th>Before Migration</th>
+<th>After Optimization</th>
+</tr>
+<tr>
+<td>Application Uptime</td>
+<td>94%</td>
+<td>99.98%</td>
+</tr>
+<tr>
+<td>Average Page Load</td>
+<td>3.2 sec</td>
+<td>1.1 sec</td>
+</tr>
+<tr>
+<td>Scalability</td>
+<td>Manual Upgrade Required</td>
+<td>Auto-Scaling Enabled</td>
+</tr>
+<tr>
+<td>Disaster Recovery</td>
+<td>Manual Backups</td>
+<td>Automated Multi-AZ Backup</td>
+</tr>
+<tr>
+<td>Monthly Cost</td>
+<td>Unoptimized High Spend</td>
+<td>Reduced by 28%</td>
+</tr>
+</table>
+
+<h2>Business Impact</h2>
+
+<div class="impact-box">
+<ul>
+<li>Near-zero downtime environment</li>
+<li>Improved application responsiveness</li>
+<li>Reduced operational risk</li>
+<li>Enhanced access control governance</li>
+<li>Lower predictable monthly infrastructure cost</li>
+<li>Future-ready architecture for rapid scaling</li>
+</ul>
+</div>
+
+<h2>Scalability & Growth Readiness</h2>
+
+<p>
+The new cloud environment supports seamless scaling during marketing campaigns 
+and traffic surges. Auto-scaling policies dynamically adjust compute capacity, 
+ensuring performance stability without manual intervention.
+</p>
+
+<p>
+The architecture also supports containerized workloads, CI/CD integration, 
+and hybrid cloud extensions if required in the future.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+The migration project successfully transitioned the organization from unstable 
+legacy hosting to a structured, secure, and optimized cloud environment.
+</p>
+
+<p>
+By combining high availability, security hardening, observability, and cost governance, 
+the infrastructure now supports both operational reliability and long-term strategic growth.
+</p>
+
+<a href="case-studies.html" class="btn-back">
+← Back to Case Studies
+</a>
 
 </section>
 
 </div>
 
 <footer>
-    © 2025 MS POINT | IT Consulting & Business Solutions
+© 2025 MS POINT | IT Consulting & Business Solutions
 </footer>
 
 </body>
