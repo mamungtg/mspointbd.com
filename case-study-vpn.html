@@ -4,91 +4,231 @@
 <meta charset="UTF-8">
 <title>Multi-Branch Corporate VPN | Case Study | MS POINT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="assets/css/style.css">
-
 <script src="assets/js/theme.js" defer></script>
 <script src="assets/js/script.js" defer></script>
+
+<style>
+/* Case Study Scoped Styling Only */
+.case-study-wrapper {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+
+.case-study-wrapper h1 { margin-bottom: 10px; }
+.case-study-wrapper h2 { margin-top: 40px; color: #1f2937; }
+.case-study-wrapper h3 { margin-top: 25px; }
+
+.case-study-wrapper .highlight-box {
+    background: #f4f6f8;
+    padding: 20px;
+    border-left: 6px solid #2563eb;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.case-study-wrapper .impact-box {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.case-study-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.case-study-wrapper th,
+.case-study-wrapper td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.case-study-wrapper th {
+    background: #f8fafc;
+}
+</style>
+
 </head>
+
 <body>
 
 <header class="site-header">
-	<div class="header-inner">
-    <div id="brand-logo"></div>
+    <div class="header-inner">
+        <div id="brand-logo">
+            <a href="index.html" class="site-title">MS POINT</a>
+        </div>
 
-    <nav class="main-menu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="solutions.html">Solutions</a>
-        <a href="industries.html">Industries</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="about.html">About</a>
-        <a href="team.html">Team</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-	</div>
+        <nav class="main-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="industries.html">Industries</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <div class="container">
 
-<section class="case-study-single">
+<section class="case-study-wrapper">
 
-    <h1>Multi-Branch Corporate VPN</h1>
-    <p class="case-subtitle">
-        Secure site-to-site IPSec tunnels with QoS and high availability
-    </p>
+<h1>Multi-Branch Corporate VPN</h1>
+<p><strong>Secure Site-to-Site IPSec Architecture with High Availability and Traffic Optimization</strong></p>
 
-    <hr>
+<p>
+As organizations expand across geographic regions, maintaining secure and reliable communication between branch offices becomes critical. This case study outlines how a fragmented, unsecured inter-branch network was transformed into a centralized, encrypted, and highly available enterprise VPN infrastructure.
+</p>
 
-    <h2>Client Overview</h2>
-    <p>
-        A growing organization operating multiple branch offices required a
-        secure, reliable, and scalable private network to connect all locations
-        with their central data center and cloud services.
-    </p>
+<h2>Client Background</h2>
 
-    <h2>Challenges</h2>
-    <ul>
-        <li>Unsecured inter-branch communication over the public internet</li>
-        <li>Inconsistent performance for business-critical applications</li>
-        <li>No redundancy for firewall or VPN gateways</li>
-        <li>Complex network management across locations</li>
-    </ul>
+<p>
+The client operates multiple branch offices that depend on centralized ERP systems, VoIP communication, financial applications, and shared storage hosted at the main data center. As the number of branches increased, connectivity instability and security risks began affecting daily operations.
+</p>
 
-    <h2>Solution Delivered</h2>
-    <ul>
-        <li>Designed and implemented site-to-site IPSec VPN tunnels</li>
-        <li>Configured pfSense firewalls with high-availability (CARP)</li>
-        <li>Implemented QoS policies for priority traffic</li>
-        <li>Centralized routing and firewall rule management</li>
-    </ul>
+<div class="highlight-box">
+<h3>Primary Challenges Identified</h3>
+<ul>
+<li>Unencrypted traffic between branch locations</li>
+<li>Frequent latency spikes impacting VoIP and ERP</li>
+<li>Single firewall per location with no failover</li>
+<li>No centralized management of firewall rules</li>
+<li>Manual recovery during ISP outages</li>
+</ul>
+</div>
 
-    <h2>Technologies Used</h2>
-    <p>
-        pfSense, IPSec VPN, CARP, VLANs, QoS, Firewall Hardening,
-        Linux Networking, Monitoring & Alerts
-    </p>
+<h2>Strategic Network Design</h2>
 
-    <h2>Outcome</h2>
-    <ul>
-        <li>Encrypted and secure communication between all branches</li>
-        <li>Improved application performance and reliability</li>
-        <li>High availability with automatic failover</li>
-        <li>Scalable design ready for new branch additions</li>
-    </ul>
+<p>
+A structured architecture was designed focusing on encryption, redundancy, segmentation, and performance stability.
+</p>
 
-    <a href="case-studies.html" class="btn-back">
-        ← Back to Case Studies
-    </a>
+<ul>
+<li>Full IPSec encryption (AES-256, SHA-256)</li>
+<li>High Availability firewall clustering (CARP)</li>
+<li>Dual WAN failover configuration</li>
+<li>VLAN segmentation for traffic isolation</li>
+<li>QoS prioritization for business-critical services</li>
+<li>Centralized monitoring and alerting</li>
+</ul>
+
+<h2>Solution Implementation</h2>
+
+<h3>1. IPSec Site-to-Site VPN Deployment</h3>
+<p>
+Secure tunnels were established between headquarters and all branches using strong encryption standards and Perfect Forward Secrecy. Phase 1 and Phase 2 parameters were standardized for consistency and scalability.
+</p>
+
+<h3>2. High Availability Firewall Cluster</h3>
+<p>
+At headquarters, pfSense firewalls were deployed in an active-passive CARP configuration. State synchronization ensured uninterrupted traffic during failover events.
+</p>
+
+<h3>3. Dual ISP Failover</h3>
+<p>
+Each branch was configured with two WAN connections. Gateway monitoring automatically rerouted traffic if primary links degraded or failed.
+</p>
+
+<h3>4. VLAN Segmentation</h3>
+<ul>
+<li>Corporate user network</li>
+<li>VoIP network</li>
+<li>Server infrastructure</li>
+<li>Guest network</li>
+<li>Management interfaces</li>
+</ul>
+
+<p>
+This minimized lateral movement risks and improved broadcast control.
+</p>
+
+<h3>5. QoS Traffic Prioritization</h3>
+<p>
+Latency-sensitive applications such as VoIP and ERP were prioritized using traffic shaping policies. This eliminated jitter and packet loss during peak hours.
+</p>
+
+<h2>Performance Comparison</h2>
+
+<table>
+<tr>
+<th>Metric</th>
+<th>Before Implementation</th>
+<th>After Implementation</th>
+</tr>
+<tr>
+<td>Inter-Branch Encryption</td>
+<td>None</td>
+<td>Fully Encrypted IPSec</td>
+</tr>
+<tr>
+<td>Firewall Redundancy</td>
+<td>Single Device</td>
+<td>HA Cluster (CARP)</td>
+</tr>
+<tr>
+<td>VoIP Stability</td>
+<td>Frequent Jitter</td>
+<td>Stable Low Latency</td>
+</tr>
+<tr>
+<td>Failover Response</td>
+<td>Manual Intervention</td>
+<td>Automatic Instant Failover</td>
+</tr>
+<tr>
+<td>Branch Onboarding</td>
+<td>Custom Manual Setup</td>
+<td>Standardized Template Deployment</td>
+</tr>
+</table>
+
+<h2>Business Impact</h2>
+
+<div class="impact-box">
+<ul>
+<li>Secure encrypted communication between all branches</li>
+<li>Improved VoIP clarity and ERP responsiveness</li>
+<li>Elimination of single points of failure</li>
+<li>Reduced downtime during ISP disruptions</li>
+<li>Simplified onboarding for new branch offices</li>
+<li>Stronger security posture aligned with enterprise standards</li>
+</ul>
+</div>
+
+<h2>Long-Term Scalability</h2>
+
+<p>
+The architecture was designed with future growth in mind. New branches can now be integrated quickly using predefined firewall templates and standardized IPSec configurations. Centralized monitoring ensures ongoing performance and security compliance.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+By implementing encrypted IPSec tunnels, CARP-based high availability, VLAN segmentation, and QoS optimization, the organization achieved a resilient and scalable private network. The new infrastructure delivers both operational stability and enterprise-grade security, supporting continued expansion with confidence.
+</p>
+
+<a href="case-studies.html" class="btn-back">
+← Back to Case Studies
+</a>
 
 </section>
 
 </div>
 
 <footer>
-    © 2025 MS POINT | IT Consulting & Business Solutions
+© 2025 MS POINT | IT Consulting & Business Solutions
 </footer>
 
 </body>
