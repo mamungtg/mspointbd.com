@@ -4,96 +4,212 @@
 <meta charset="UTF-8">
 <title>Banking Infrastructure Modernization | Case Study | MS POINT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="assets/css/style.css">
-
 <script src="assets/js/theme.js" defer></script>
 <script src="assets/js/script.js" defer></script>
+
+<style>
+/* Scoped Case Study Styling Only */
+.case-study-wrapper {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+
+.case-study-wrapper h1 { margin-bottom: 10px; }
+.case-study-wrapper h2 { margin-top: 40px; color: #1f2937; }
+.case-study-wrapper h3 { margin-top: 25px; }
+
+.case-study-wrapper .featured-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 25px 0 35px 0;
+}
+
+.case-study-wrapper .highlight-box {
+    background: #f4f6f8;
+    padding: 20px;
+    border-left: 6px solid #2563eb;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.case-study-wrapper .impact-box {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.case-study-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.case-study-wrapper th,
+.case-study-wrapper td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.case-study-wrapper th {
+    background: #f8fafc;
+}
+</style>
 </head>
+
 <body>
 
 <header class="site-header">
-	<div class="header-inner">
-    <div id="brand-logo"></div>
+    <div class="header-inner">
+        <div id="brand-logo">
+            <a href="index.html" class="site-title">MS POINT</a>
+        </div>
 
-    <nav class="main-menu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="solutions.html">Solutions</a>
-        <a href="industries.html">Industries</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="about.html">About</a>
-        <a href="team.html">Team</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-	</div>
+        <nav class="main-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="industries.html">Industries</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <div class="container">
 
-<section class="case-study-single">
+<section class="case-study-wrapper">
 
-    <h1>Banking Infrastructure Modernization</h1>
-    <p class="case-subtitle">
-        Secure, resilient, and compliant infrastructure for multi-branch banking operations
-    </p>
+<h1>Banking Infrastructure Modernization</h1>
+<p><strong>Secure, Resilient, and Compliant Infrastructure for Multi-Branch Banking Operations</strong></p>
+<img class="featured-image"
+     src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1400&q=80"
+     alt="Secure enterprise banking data center servers">
+<p>
+Financial institutions operate in one of the most regulated and high-risk technology environments. 
+System instability, outdated infrastructure, and weak access controls can directly impact compliance, 
+operational continuity, and customer trust.
+</p>
 
-    <hr>
+<h2>Client Background</h2>
 
-    <h2>Client Overview</h2>
-    <p>
-        A financial institution operating multiple branch offices faced recurring
-        outages, outdated infrastructure, weak Active Directory design, and limited
-        security compliance. The organization required a complete modernization
-        of its on-premises and branch IT environment.
-    </p>
+<p>
+The institution operated multiple branch offices connected to a centralized data center hosting core banking systems, 
+authentication servers, file services, and internal applications. Over time, infrastructure aging and inconsistent 
+architecture led to frequent outages and security exposure.
+</p>
 
-    <h2>Challenges</h2>
-    <ul>
-        <li>Unstable Windows and Linux server environments</li>
-        <li>Lack of redundancy, disaster recovery, and failover planning</li>
-        <li>Poorly structured Active Directory and access controls</li>
-        <li>Limited monitoring and delayed incident detection</li>
-        <li>Frequent downtime impacting branch productivity</li>
-    </ul>
+<div class="highlight-box">
+<h3>Key Issues Identified</h3>
+<ul>
+<li>Frequent server crashes and degraded performance</li>
+<li>No virtualization redundancy</li>
+<li>Weak Active Directory structure with excessive privilege assignments</li>
+<li>No structured disaster recovery plan</li>
+<li>Limited real-time monitoring</li>
+</ul>
+</div>
 
-    <h2>Solution Delivered</h2>
-    <ul>
-        <li>Designed and deployed VMware / Hyper-V virtualization clusters</li>
-        <li>Rebuilt Active Directory with hardened Group Policies and OU structure</li>
-        <li>Implemented firewall segmentation and secure inter-branch connectivity</li>
-        <li>Deployed centralized monitoring using PRTG and Zabbix</li>
-        <li>Migrated and optimized core banking services with minimal downtime</li>
-    </ul>
+<h2>Modernization Strategy</h2>
 
-    <h2>Technologies Used</h2>
-    <p>
-        VMware, Hyper-V, Windows Server, Linux, Active Directory,
-        Group Policy, Firewall Segmentation, PRTG, Zabbix,
-        Backup & Disaster Recovery
-    </p>
+<p>
+A phased modernization roadmap was implemented focusing on virtualization, directory restructuring, 
+network segmentation, centralized monitoring, and compliance readiness.
+</p>
 
-    <h2>Outcome</h2>
-    <ul>
-        <li>99.9% infrastructure uptime across all branches</li>
-        <li>Improved security posture and regulatory readiness</li>
-        <li>Faster incident detection and response</li>
-        <li>Scalable architecture ready for future expansion</li>
-        <li>Significant reduction in operational downtime</li>
-    </ul>
+<h3>Virtualization & High Availability</h3>
+<ul>
+<li>Deployment of VMware / Hyper-V cluster</li>
+<li>Shared storage configuration</li>
+<li>Live migration capability</li>
+<li>Automated failover policies</li>
+</ul>
 
-    <a href="case-studies.html" class="btn-back">
-        ← Back to Case Studies
-    </a>
+<h3>Active Directory Hardening</h3>
+<ul>
+<li>Structured OU design</li>
+<li>Least-privilege model</li>
+<li>Hardened Group Policies</li>
+<li>Administrative tier separation</li>
+</ul>
+
+<h3>Monitoring & Security</h3>
+<ul>
+<li>PRTG and Zabbix deployment</li>
+<li>Centralized logging</li>
+<li>Firewall segmentation</li>
+<li>Secure inter-branch connectivity</li>
+</ul>
+
+<h2>Performance & Reliability Improvements</h2>
+
+<table>
+<tr>
+<th>Metric</th>
+<th>Before</th>
+<th>After</th>
+</tr>
+<tr>
+<td>Infrastructure Uptime</td>
+<td>95%</td>
+<td>99.9%</td>
+</tr>
+<tr>
+<td>Failover</td>
+<td>Manual Recovery</td>
+<td>Automated Cluster Failover</td>
+</tr>
+<tr>
+<td>Incident Detection</td>
+<td>Reactive</td>
+<td>Real-Time Alerts</td>
+</tr>
+<tr>
+<td>Privilege Governance</td>
+<td>Excessive Admin Access</td>
+<td>Tiered Access Model</td>
+</tr>
+</table>
+
+<h2>Business Impact</h2>
+
+<div class="impact-box">
+<ul>
+<li>Reduced operational downtime</li>
+<li>Improved regulatory readiness</li>
+<li>Enhanced access governance</li>
+<li>Improved core banking stability</li>
+<li>Future-ready scalable architecture</li>
+</ul>
+</div>
+
+<h2>Conclusion</h2>
+
+<p>
+The modernization initiative transformed a reactive infrastructure into a resilient, compliant, 
+and highly available enterprise platform capable of supporting secure multi-branch banking operations.
+</p>
+
+<a href="case-studies.html" class="btn-back">
+← Back to Case Studies
+</a>
 
 </section>
 
 </div>
 
 <footer>
-    © 2025 MS POINT | IT Consulting & Business Solutions
+© 2025 MS POINT | IT Consulting & Business Solutions
 </footer>
 
 </body>
