@@ -543,28 +543,28 @@ body.dark footer {
 /* Left Vertical Review Stack */
 .left-review-stack {
     position: fixed;
-    top: 100px;
-    left: 15px;
-    width: 260px;
+    top: 140px;   /* aligns just below header */
+    left: 20px;
+    width: 280px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     z-index: 999;
 }
 
 .left-review-stack img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
 }
 
 .left-review-stack img:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 
 /* Hide on smaller screens */
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
     .left-review-stack {
         display: none;
     }
