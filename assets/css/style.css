@@ -539,3 +539,44 @@ body.dark footer {
     height: 380px;
     border: 0;
 }
+
+/* Side Reviews */
+.side-review {
+    position: fixed;
+    top: 35%;
+    width: 240px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    font-size: 14px;
+    line-height: 1.6;
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
+.side-review:hover {
+    transform: translateY(-5px);
+}
+
+.review-author {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #0a3d62;
+    font-size: 13px;
+}
+
+.left-review {
+    left: 20px;
+}
+
+.right-review {
+    right: 20px;
+}
+
+/* Hide on smaller screens */
+@media (max-width: 1300px) {
+    .side-review {
+        display: none;
+    }
+}
