@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cloud Infrastructure Migration & Optimization | Case Study | MS POINT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/theme.js" defer></script>
+<script src="assets/js/script.js" defer></script>
+
+<style>
+/* Scoped Case Study Styling Only */
+.case-study-wrapper {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+.case-study-wrapper h1 { margin-bottom: 10px; }
+.case-study-wrapper h2 { margin-top: 40px; color: #1f2937; }
+.case-study-wrapper h3 { margin-top: 25px; }
+
+.case-study-wrapper .highlight-box {
+    background: #f4f6f8;
+    padding: 20px;
+    border-left: 6px solid #2563eb;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.case-study-wrapper .impact-box {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.case-study-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.case-study-wrapper .featured-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 25px 0 35px 0;
+}
+.case-study-wrapper th,
+.case-study-wrapper td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.case-study-wrapper th { background: #f8fafc; }
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div id="brand-logo">
+            <a href="index.html" class="site-title">MS POINT</a>
+        </div>
+
+        <nav class="main-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="industries.html">Industries</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+<section style="padding:80px 20px; background:#f9fafb; font-family:Arial, sans-serif; line-height:1.8;">
+  <div style="max-width:1100px; margin:0 auto;">
+
+    <!-- Header -->
+    <div style="text-align:center; margin-bottom:60px;">
+      <h1 style="font-size:36px; margin-bottom:10px;">
+        Server Performance Optimization Case Study
+      </h1>
+      <p style="font-size:18px; color:#555;">
+        Achieving 40% performance improvement across a high-load multi-website production environment
+      </p>
+      <p style="margin-top:15px; color:#444;">
+        Implemented by <strong>Mominul Hoque</strong>, DevOps & Infrastructure Optimization Specialist
+      </p>
+    </div>
+
+    <!-- Introduction -->
+    <div style="margin-bottom:40px;">
+      <p>
+        Modern businesses rely heavily on fast, stable, and scalable web infrastructure. Performance issues not only affect user experience but also directly impact search engine rankings, customer retention, and revenue generation.
+      </p>
+      <p>
+        This case study presents a real-world optimization project where a production server hosting more than 50 active websites was successfully optimized without downtime. The goal was to improve speed, stability, and scalability using a structured DevOps approach.
+      </p>
+      <p>
+        By combining system-level tuning, application optimization, and advanced caching strategies, the server achieved a measurable 40% performance improvement along with enhanced reliability and efficiency.
+      </p>
+    </div>
+
+    <!-- Environment -->
+    <div style="margin-bottom:40px;">
+      <h2>Project Environment</h2>
+      <ul>
+        <li>Operating System: Ubuntu 22.04 LTS</li>
+        <li>Web Server: Nginx</li>
+        <li>Database: MariaDB</li>
+        <li>Application Layer: PHP-FPM</li>
+        <li>Hosting Scope: 50+ production websites</li>
+      </ul>
+    </div>
+
+    <!-- Problem -->
+    <div style="margin-bottom:40px;">
+      <h2>Problem Overview</h2>
+      <p>
+        The server experienced slow load times, high CPU usage, and inconsistent performance during peak traffic. Average response times ranged between 2–4 seconds, which negatively impacted user experience and SEO performance.
+      </p>
+      <p>
+        Monitoring revealed inefficient database queries, lack of caching, and unoptimized server configurations, creating performance bottlenecks across multiple websites.
+      </p>
+    </div>
+
+    <!-- Challenges -->
+    <div style="margin-bottom:40px;">
+      <h2>Key Challenges</h2>
+      <ul>
+        <li>High CPU usage and load spikes</li>
+        <li>Slow website response times</li>
+        <li>No proper caching strategy</li>
+        <li>Inefficient database queries</li>
+        <li>Unoptimized Nginx & PHP-FPM</li>
+      </ul>
+    </div>
+
+    <!-- Strategy -->
+    <div style="margin-bottom:40px;">
+      <h2>Optimization Strategy</h2>
+
+      <h3>1. Nginx Optimization</h3>
+      <p>
+        Worker processes and connections were tuned based on CPU cores. Gzip compression and static file caching were enabled to improve delivery speed.
+      </p>
+
+      <h3>2. Caching Implementation</h3>
+      <p>
+        FastCGI caching was configured to reduce backend load. Browser caching improved repeat visit performance.
+      </p>
+
+      <h3>3. Database Optimization</h3>
+      <p>
+        Slow queries were optimized using indexing and MariaDB tuning, improving database response times significantly.
+      </p>
+
+      <h3>4. PHP-FPM Tuning</h3>
+      <p>
+        Process limits and execution settings were optimized to handle concurrent traffic efficiently.
+      </p>
+
+      <h3>5. System-Level Improvements</h3>
+      <p>
+        Unused services were removed and kernel tuning improved overall system responsiveness.
+      </p>
+    </div>
+
+    <!-- Highlight -->
+    <div style="background:#eef6ff; padding:20px; border-radius:8px; margin-bottom:40px;">
+      <strong>Key Highlight:</strong> Optimized 50+ production websites without downtime, achieving measurable performance gains.
+    </div>
+
+    <!-- Performance Proof -->
+    <div style="margin-bottom:40px;">
+      <h2>Performance Proof</h2>
+
+      <div style="display:flex; flex-wrap:wrap; gap:20px;">
+        <img src="assets/img/casestudy/performance01.png" alt="Before Optimization" style="width:100%; max-width:48%; border-radius:8px; object-fit:cover;">
+        <img src="assets/img/casestudy/optimization01.jpg" alt="After Optimization" style="width:100%; max-width:48%; border-radius:8px; object-fit:cover;">
+      </div>
+
+      <p style="text-align:center; margin-top:10px; color:#555;">
+        Left: Before Optimization | Right: After Optimization
+      </p>
+
+      <p style="margin-top:10px; color:#444;">
+        Performance verified using GTmetrix and real server monitoring data.
+      </p>
+
+      <ul>
+        <li>Before: ~3.2s load time</li>
+        <li>After: ~1.8s load time</li>
+        <li><strong>Performance Improvement: 40% faster</strong></li>
+      </ul>
+    </div>
+
+    <!-- Server Metrics -->
+    <div style="margin-bottom:40px;">
+      <h2>Server Metrics</h2>
+
+      <div style="display:flex; flex-wrap:wrap; gap:20px;">
+        <img src="assets/img/casestudy/optimization02.png" alt="CPU Before Optimization" style="width:100%; max-width:48%; border-radius:8px;">
+        <img src="assets/img/casestudy/server01.jpg" alt="CPU After Optimization" style="width:100%; max-width:48%; border-radius:8px;">
+      </div>
+
+      <p style="margin-top:10px; color:#555; text-align:center;">
+        CPU usage reduced significantly after optimization
+      </p>
+
+      <p>
+        Monitoring confirmed lower CPU usage, better load handling, and stable performance during peak traffic.
+      </p>
+    </div>
+
+    <!-- Results -->
+    <div style="background:#fff; padding:30px; border-radius:10px; margin-bottom:40px;">
+      <h2>Final Results</h2>
+      <ul>
+        <li>40% improvement in performance</li>
+        <li>Reduced load time by ~1.4 seconds</li>
+        <li>Lower CPU usage</li>
+        <li>Improved stability</li>
+        <li>Better user experience</li>
+      </ul>
+    </div>
+
+    <!-- Impact -->
+    <div style="margin-bottom:40px;">
+      <h2>Business Impact</h2>
+      <p>
+        The optimization improved user engagement and reduced infrastructure strain without requiring hardware upgrades. The system is now scalable and ready for future growth.
+      </p>
+    </div>
+
+    <!-- Technologies -->
+    <div style="margin-bottom:40px;">
+      <h2>Technologies Used</h2>
+      <p>
+        Nginx • MariaDB • PHP-FPM • Ubuntu • FastCGI Cache • Performance Tuning
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <div style="text-align:center; background:#111; color:#fff; padding:50px; border-radius:10px;">
+      <h2>Need Similar Optimization?</h2>
+      <p>
+        I help businesses improve server speed, stability, and scalability.
+      </p>
+      <a href="#contact" style="background:#ff6600; color:#fff; padding:14px 30px; text-decoration:none; border-radius:5px;">
+        Get a Free Consultation
+      </a>
+      <p style="margin-top:20px; font-size:14px;">
+        Mominul Hoque — DevOps & Infrastructure Specialist
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>© 2025 MS POINT | IT Consulting & Business Solutions</footer>
+
+</body>
+</html>
